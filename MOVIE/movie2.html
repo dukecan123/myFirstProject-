@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>影片详情</title>
+		<link rel="stylesheet" type="text/css" href="css/movie2.css"/>
+		<!--<script src="js/xingxing.js" type="text/javascript" charset="utf-8"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<link rel="stylesheet" type="text/css" href="css/comments.css"/>
+		<style type="text/css">
+			@font-face {
+				font-family: 'iconfont';
+				src: url('font/iconfont.eot');
+				src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+			}
+			
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 16px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+				font-size: 35px;
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<!--头部导航-->
+			<div class="header">
+				<div class="header-con">
+					<a class="logo" href="index.html"><img src="img/logo.png"/></a>				
+					<ul class="navbar">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="cinema-list.html">影院</a></li>
+						<li><a href="book1.html">购票观影</a></li>
+						<li><a href="page-list.html">新闻消息</a></li>
+						<li><a href="movie1.html">电影列表</a></li>
+						<li><a id="show-search" href="">搜索</a></li>
+					</ul>										
+					<div class="panel">
+						<div class="me">
+							<span><img src="img/index/head.jpg"/></span>
+							<a class="signin" href="two.html">登录</a>
+							<a href="one.html" class="btn-book">联系我们</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部搜索-->
+			<div id="search" class="search">
+				<div class="search-inner">
+					<form class="search-form" method="post">
+						<input class="search-field" type="text" id="" placeholder="search" />
+						<span tabindex="0" hidefocus="true" id="search-by">电影名</span>
+						<ul id="search-select">
+							<li class="first">电影名</li>
+							<li>演员</li>
+							<li>导演</li>
+							<li>年份</li>
+							<li>类型</li>
+						</ul>
+						<input id="search-submit" type="submit" value="搜索"/>
+					</form>
+				</div>
+			</div>
+			
+			<div class="mo">
+				<div class="mo1">
+					<h3><img src="img1/jiao.png">电影</h3>
+				</div>
+			</div>
+			<!--内容-->
+			<div class="con">
+				<div class="con_left">
+					<div class="con_left1">
+						<img src="img1/p1.jpg" alt="" />
+						<img src="img1/p2.jpg" alt="" />
+						<img src="img1/p3.jpg" alt="" />
+					</div>
+					<div class="con_left2">
+						<h3>A.电影APP</h3>
+						<p>所有智能手机
+						<br />和电影
+						</p>
+						<ul class="img1">
+							<a href="#"><li><img src="img1/bg2.png"></li></a>
+							<a href="#"><li><img src="img1/bg3.png"></li></a>
+							<a href="#"><li><img src="img1/bg4.png"></li></a>
+						</ul>
+					</div>
+					<div class="con_left3">
+						<div class="zuo">
+							<h3>THE MOST 
+							<br /><span>讨论帖</span></h3>
+							<ul>
+								<li>1.<a href="#">重力</a></li>
+								<li>2.<a href="#">黑金杀机</a></li>
+								<li>3.<a href="#">坏爷爷</a></li>
+								<li>4.<a href="#">蓝色是最温暖的颜色</a></li>
+								<li>5.<a href="#">高峰</a></li>
+								<li>6.<a href="#">菲利普船长</a></li>
+								<li>7.<a href="#">逃跑计划</a></li>
+								<li>8.<a href="#">多云有机会</a></li>
+								<li>9.<a href="#">囚犯</a></li>
+								<li>10.<a href="#">第五地产</a></li>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="con_left3" id="con_left3">
+						<div class="zuo">
+							<h3>即将上映
+							<br /><span>电影</span></h3>
+							<ul>
+								<li>1.<a href="#">安德的游戏</a></li>
+								<li>2.<a href="#">关于时间</a></li>
+								<li>3.<a href="#">去年Vegas</a></li>
+								<li>4.<a href="#">自由的鸟儿</a></li>
+								<li>5.<a href="#">华尔街的狼</a></li>
+								<li>6.<a href="#">最好的男人假期</a></li>
+								<li>7.<a href="#">偷书贼</a></li>
+								<li>8.<a href="#">着火</a></li>
+								<li>9.<a href="#">送货的人</a></li>
+								<li>10.<a href="#">内布拉斯加州</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!--又侧开始-->
+				<div class="right">
+					<div class="right_1">
+						<div class="com">
+							<div class="com_1"><img src="img1/m1.jpg"></div>
+							<div class="com_2">
+								<a href="movie3.html">7.7</a>
+							</div>
+							<div class="com_3">
+								<span>你的评分: </span>
+								<div class="xing">
+									<img src="img1/xing1.png">
+									<img src="img1/xing1.png">
+									<img src="img1/xing1.png">
+									<img src="img1/xing1.png">
+									<img src="img1/xing1.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="com2">
+							<h4>湄公河行动</h4>
+							<p>105 min</p>
+							<ul>
+								<li>地区: <a href="#">中国大陆</a></li>
+								<li>类型: <a href="#">动作</a> <a href="#">犯罪 </a></li>
+								<li>上映: <a href="#">2016-09-30</a></li>
+								<li>导演: <a href="#">林超贤</a></li>
+								<li>主演: <a href="#">张涵予</a>，<a href="#"> 彭于晏</a>，<a href="#">孙淳</a>，
+									<a href="#"> 陈宝国</a>，<a href="#"> 冯文娟</a>，<a href="#"> 刘显达子</a>，<a href="#"> 赵健</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<a href="#"  class="com2_1">评论:  15</a>
+							<div class="com21">
+								<a href="book1.html">为这部电影预订一张票</a>
+								<a href="#">添加到观看列表</a>
+							</div>
+							<div class="com22">优惠券:
+								<a href="three.html">Tweet</a>
+							</div>
+						</div>
+						
+						
+					</div>
+					<div class="right_2">
+							<div class="com31">剧情</div>
+							<p>2011年10月5日清晨，两艘中国商船在湄公河金三角流域遇袭，船上13名中国船员全部遇难，并在船上发现90万粒毒品。这宗枪杀十三名中国船员的血腥冤案，掀起了悲剧的序幕。面对矛头指向中国运毒、颠倒是非的舆论，为了还遇难同胞一个清白，中国决定派出缉毒精英，组成此次案件的特别行动小组，以高刚为队长，潜入金三角查明真相，企图揪出案件的幕后黑手。然而缉拿真凶的过程并非他们想得那么简单，事件的进展扑朔迷离，通往真相的道路更是险象环生。</p>
+					</div>
+					<div class="right_3">
+							<div class="com32">剧照&nbsp;&nbsp;预告</div>
+							<div class="com33">
+								<p class="com331">234&nbsp;照片</p>
+								<p class="com332"><a href="four.html"> 3&nbsp;预告片</a></p>
+							</div>
+							<div class="com34">
+								<img src="http://www.taiwan.cn/tp/whjy/201610/W020161009506855530251.jpg">
+								<img src="http://www.jzsl.com/d/file/jzzaixian/20161006/d7f5877f92cbc5a850603cafe487eb80.jpeg?imageView&thumbnail=550x0">
+								<img src="http://upload.mnw.cn/2016/1010/1476062856386.jpeg?imageView&thumbnail=550x0">
+								<img src="http://jiangsu.china.com.cn/uploadfile/2016/1008/1475891135042696.jpg">
+							</div>
+					</div>
+					<div class="right_4">
+						<div class="com41">售票</div>
+						<div class="th">
+							<div class="tha" id="tha">
+								<p class="th1">地区<a  class="lon" id="lon">中国</a></p>
+								<ul class="th11" id="th11" style="height: 0;">
+									<li class="th111">中国</li>
+									<li>纽约</li>
+									<li>巴黎</li>
+									<li>柏林</li>
+									<li>莫斯科</a></li>
+									<li>明斯克</li>
+									<li>华沙</li>
+									<li>基辅</li>
+								</ul>
+							</div>
+							
+							<p class="th2">日期<a href="#" class="lon1">27/09/2016</a></p>
+							<p class="th3" id="th3">电影时间表</p>
+							<p class="th4" id="th4">电影院名称</p>
+						</div>
+					</div>
+					
+					<!--影评-->
+						<div id="yp" class="yp">
+							<div class="yp1">
+								<p>电影世界</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>帝国</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>普通人</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>剧场</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>影屋</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>		
+						
+						
+					<div id="tab-comments">
+						<div class="inputarea">
+							<textarea placeholder="add your comment here"></textarea>
+							<input type="button" value="提交评论" />
+						</div>
+						<div id="comment" class="comment">
+							<div class="comment-list">
+								<div class="user-info">
+									<img src="img/index/head.jpg"/>
+									<div class="info">
+										<p class="name">触手塔</p>
+										<p class="time">来自：蜘蛛电影票iphone版2016-03-04 03:52:51</p>
+									</div>
+									<a class="reply" href="javascript:">回复</a>
+								</div>
+								<div class="comment-con">
+									<p>来朋友家这边，第一次来这个影院，来早了，就在影院旁边逛了一圈，玩的地方很多，休息区也够大，总体感觉还不错</p>
+								</div>
+								<div class="replyarea">
+									<textarea placeholder="add your comment here"></textarea>
+									<input type="button" value="提交回复" />
+								</div>
+							</div>
+							<div class="comment-list">
+								<div class="user-info">
+									<img src="img/index/head.jpg"/>
+									<div class="info">
+										<p class="name">zhujd617</p>
+										<p class="time">来自：蜘蛛电影票iphone版2016-03-04 03:52:51</p>
+									</div>
+									<a class="reply" href="javascript:">回复</a>
+								</div>
+								<div class="comment-con">
+									<p>离家近，有大片必去的，看大片试听效果都还可以</p>
+								</div>
+								<div class="replyarea">
+									<textarea placeholder="add your comment here"></textarea>
+									<input type="button" value="提交回复" />
+								</div>
+							</div>
+							<div class="comment-list">
+								<div class="user-info">
+									<img src="img/index/head.jpg"/>
+									<div class="info">
+										<p class="name">swiss1107</p>
+										<p class="time">来自：蜘蛛电影票网页版2016-02-28 10:01:10</p>
+									</div>
+									<a class="reply" href="javascript:">回复</a>
+								</div>
+								<div class="comment-con">
+									<p>不错，环境太赞，太喜欢，服务啥的，真心好的没的说</p>
+								</div>
+								<div class="replyarea">
+									<textarea placeholder="add your comment here"></textarea>
+									<input type="button" value="提交回复" />
+								</div>
+							</div>
+							<div class="comment-list">
+								<div class="user-info">
+									<img src="img/index/head.jpg"/>
+									<div class="info">
+										<p class="name">孟繁旭</p>
+										<p class="time">来自：蜘蛛电影票iphone版2016-01-04 03:52:51</p>
+									</div>
+									<a class="reply" href="javascript:">回复</a>
+								</div>
+								<div class="comment-con">
+									<p>环境不错，看电影时视听效果很，已经去过很多次了，还会一如既往的去的！</p>
+								</div>
+								<div class="replyarea">
+									<textarea placeholder="add your comment here"></textarea>
+									<input type="button" value="提交回复" />
+								</div>
+							</div>
+							<div class="comment-list">
+								<div class="user-info">
+									<img src="img/index/head.jpg"/>
+									<div class="info">
+										<p class="name">swiss1107</p>
+										<p class="time">来自：蜘蛛电影票网页版2016-02-28 10:01:10</p>
+									</div>
+									<a class="reply" href="javascript:">回复</a>
+								</div>
+								<div class="comment-con">
+									<p>不错，环境太赞，太喜欢，服务啥的，真心好的没的说</p>
+								</div>
+								<div class="replyarea">
+									<textarea placeholder="add your comment here"></textarea>
+									<input type="button" value="提交回复" />
+								</div>
+							</div>
+							<div class="comment-list">
+								<div class="user-info">
+									<img src="img/index/head.jpg"/>
+									<div class="info">
+										<p class="name">孟繁旭</p>
+										<p class="time">来自：蜘蛛电影票iphone版2016-01-04 03:52:51</p>
+									</div>
+									<a class="reply" href="javascript:">回复</a>
+								</div>
+								<div class="comment-con">
+									<p>环境不错，看电影时视听效果很，已经去过很多次了，还会一如既往的去的！</p>
+								</div>
+								<div class="replyarea">
+									<textarea placeholder="add your comment here"></textarea>
+									<input type="button" value="提交回复" />
+								</div>
+							</div>
+							<div class="comment-list">
+								<div class="user-info">
+									<img src="img/index/head.jpg"/>
+									<div class="info">
+										<p class="name">swiss1107</p>
+										<p class="time">来自：蜘蛛电影票网页版2016-02-28 10:01:10</p>
+									</div>
+									<a class="reply" href="javascript:">回复</a>
+								</div>
+								<div class="comment-con">
+									<p>不错，环境太赞，太喜欢，服务啥的，真心好的没的说</p>
+								</div>
+								<div class="replyarea">
+									<textarea placeholder="add your comment here"></textarea>
+									<input type="button" value="提交回复" />
+								</div>
+							</div>
+							<div class="comment-list">
+								<div class="user-info">
+									<img src="img/index/head.jpg"/>
+									<div class="info">
+										<p class="name">孟繁旭</p>
+										<p class="time">来自：蜘蛛电影票iphone版2016-01-04 03:52:51</p>
+									</div>
+									<a class="reply" href="javascript:">回复</a>
+								</div>
+								<div class="comment-con">
+									<p>环境不错，看电影时视听效果很，已经去过很多次了，还会一如既往的去的！</p>
+								</div>
+								<div class="replyarea">
+									<textarea placeholder="add your comment here"></textarea>
+									<input type="button" value="提交回复" />
+								</div>
+							</div>
+						</div>
+						<input type="button" id="show-more" value="更多评论" />
+					</div>													
+				</div>																
+			</div>
+						
+			<!--页面尾部-->
+			<div class="footer">
+				<div class="footer-con">
+					<ul>
+						<li><a href="">新闻</a></li>
+						<li><a href="">影院</a></li>
+						<li><a href="">购票</a></li>
+						<li><a href="">评分</a></li>
+					</ul>
+					<ul>
+						<li><a href="">即将上映</a></li>
+						<li><a href="">正在热映</a></li>
+						<li><a href="">观影指南</a></li>
+						<li><a href="">电影票房</a></li>
+					</ul>
+					<ul>
+						<li><a href="">服务条款</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">关于我们</a></li>
+					</ul>
+					<div class="footer-info">
+						<p>
+							<img class="logo-bot" src="img/index/logo-dark.png"/><br />
+							<span>关注我们</span>
+						</p>
+						<div id="social" class="social">
+							<a href=""><i class="iconfont">&#xe606;</i></a>
+							<a href=""><i class="iconfont">&#xe675;</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="go-to-top"></div>
+		<script src="js/global.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

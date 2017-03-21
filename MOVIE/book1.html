@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购票观影</title>
+		<link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/book1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/datepicker.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/book1jq.js"></script>
+		<!--<script src="js/book1.js"></script>-->
+		<style type="text/css">
+			@font-face {
+				font-family: 'iconfont';
+				src: url('font/iconfont.eot');
+				src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+			}
+			
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 16px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+				font-size: 35px;
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="header">
+				<div class="header-con">
+					<a class="logo" href="index.html"><img src="img/logo.png"/></a>				
+					<ul class="navbar">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="cinema-list.html">影院</a></li>
+						<li><a href="book1.html">购票观影</a></li>
+						<li><a href="page-list.html">新闻消息</a></li>
+						<li><a href="movie1.html">电影列表</a></li>
+						<li><a id="show-search" href="">搜索</a></li>
+					</ul>										
+					<div class="panel">
+						<div class="me">
+							<span><img src="img/index/head.jpg"/></span>
+							<a class="signin" href="two.html">登录</a>
+							<a href="one.html" class="btn-book">联系我们</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="search" class="search">
+				<div class="search-inner">
+					<form class="search-form" method="post">
+						<input class="search-field" type="text" id="" placeholder="search" />
+						<span tabindex="0" hidefocus="true" id="search-by">电影名</span>
+						<ul id="search-select">
+							<li class="first">电影名</li>
+							<li>演员</li>
+							<li>导演</li>
+							<li>年份</li>
+							<li>类型</li>
+						</ul>
+						<input id="search-submit" type="submit" value="搜索"/>
+					</form>
+				</div>
+			</div>
+		
+		
+		<div class="book">
+			<img src="imsges/tickets.png"/>
+			<h3>订票观影</h3>
+			<p>享受你的电影时光</p>
+			<div class="butt">
+		    	<a href="javascript:;" class="btn1 fl">购买</a>
+				<a href="javascript:;" class="btn2 fl">服务</a>	
+			</div>
+		</div>
+		<div class="what_box inner clearfix">
+			<div class="left fl">1.选择你的电影</div>
+			<div class="right fl"></div>
+		</div>
+		<div class="choose inner">
+			<span class="small_pic"></span>选择一部电影
+		</div>
+	<!--	11-->
+		<div class="banner1" id="banner1">
+			<ul id="ul">
+				<li><img src="img/index/m1.jpg"/></li>
+				<li><img src="img/index/m2.jpg"/></li>
+				<li><img src="img/index/m3.jpg"/></li>
+				<li><img src="img/index/m4.jpg"/></li>
+				<li><img src="img/index/m5.jpg"/></li>
+				<li><img src="img/index/m6.jpg"/></li>
+				<li><img src="img/index/s1.jpg"/></li>
+				<li><img src="img/index/s3.jpg"/></li>
+				<li><img src="img/index/s4.jpg"/></li>
+				<li><img src="img/index/s5.jpg"/></li>
+			</ul>
+		</div>
+		<div class="choosen" id="choosen_one">
+			<div class="l">
+				<div class="r">电影选择 : <span id="pic_change1" class="down"></span></div>
+			</div>
+		</div>
+		<div class="choose inner">
+			<span class="small_pic"></span>影院和日期
+		</div>
+		<div class="inner clearfix">
+			<div class="fl city">
+				<span class="city_pic"></span>
+			    <a href="javascript:;" class="london" id="london">喜洋四季荟   ∨ <span class="sjx" id="sjx">▲</span></a>
+			    <div class="city_select" id="city_select">
+			    	<ul>
+			    		<li class="spec"><a href="#">东圃摩登城</a></li>
+			    		<li><a href="#">其他</a></li>
+			    		<li><a href="#">其他</a></li>
+			    		<li><a href="#">其他</a></li>
+			    		<li><a href="#">其他</a></li>
+			    		<li><a href="#">其他</a></li>
+			    	</ul>
+			    </div>
+			</div>
+			<div class="fl date">
+				<span class="city_date"></span>
+			    <input type="text" id="date"></input>
+			</div>
+		</div>
+		<div class="choose inner">
+			<span class="small_pic"></span>选择时间
+		</div>
+		<div class="book_ticket inner" id="book_ticket">
+			<div class="book_ticket_row">
+				<div class="fl fl_title">卡通 <span>|</span></div>
+				<div class="fl fr_ticket">
+					<a href="javascript:;" >13:25</a>
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+					<a href="javascript:;">14:20</a>
+				</div>
+			</div>
+			<div class="book_ticket_row">
+				<div class="fl fl_title">超人 <span>|</span></div>
+				<div class="fl fr_ticket">
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;" class="current">13:25</a>
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+					<a href="javascript:;">14:20</a>
+				</div>
+			</div>
+			<div class="book_ticket_row">
+				<div class="fl fl_title">动漫 <span>|</span></div>
+				<div class="fl fr_ticket">
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+					<a href="javascript:;">14:20</a>
+				</div>
+			</div>
+			<div class="book_ticket_row">
+				<div class="fl fl_title">学校电影 <span>|</span></div>
+				<div class="fl fr_ticket">
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+				</div>
+			</div>
+			<div class="book_ticket_row">
+				<div class="fl fl_title">青春片<span>|</span></div>
+				<div class="fl fr_ticket">
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+					<a href="javascript:;">14:20</a>
+					<a href="javascript:;">13:25</a>
+					<a href="javascript:;">14:20</a>
+				</div>
+			</div>
+		</div>
+		<!--22-->
+		<div class="choosen" id="choosen_ticket">
+			<div class="l">
+				<div class="r">时间选择   : <span id="pic_change2" class="down"></span></div>
+			</div>
+		</div>
+		<div class="next">
+			<a href="book2.html" class="cont">
+				<span class="next_step">下一步</span>
+				<span class="choose_a_sit">选择座位</span>
+				<p>&gt;</p>
+			</a>
+		</div>
+		
+		
+		
+		
+		<div class="footer">
+			<div class="footer-con">
+				<ul>
+					<li><a href="">新闻</a></li>
+					<li><a href="">影院</a></li>
+					<li><a href="">购票</a></li>
+					<li><a href="">评分</a></li>
+				</ul>
+				<ul>
+					<li><a href="">即将上映</a></li>
+					<li><a href="">正在热映</a></li>
+					<li><a href="">观影指南</a></li>
+					<li><a href="">电影票房</a></li>
+				</ul>
+				<ul>
+					<li><a href="">服务条款</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">关于我们</a></li>
+				</ul>
+				<div class="footer-info">
+					<p>
+						<img class="logo-bot" src="img/index/logo-dark.png"/><br />
+						<span>关注我们</span>
+					</p>
+					<div id="social" class="social">
+						<a href=""><i class="iconfont">&#xe606;</i></a>
+						<a href=""><i class="iconfont">&#xe675;</i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--返回顶部-->
+		<div id="go-to-top"></div>
+		<script src="js/global.js" type="text/javascript" charset="utf-8"></script>		
+	</body>
+</html>

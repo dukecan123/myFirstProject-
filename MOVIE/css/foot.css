@@ -1,0 +1,11 @@
+.footer{ width: 100%; padding: 45px 0; overflow: hidden; background: url(../img/price-pattern.jpg); }
+.footer-con{ width: 1170px; margin: 0 auto; }
+.footer-con ul{ width: 16%; float: left; padding: 15px; }
+.footer-con ul li{ line-height: 30px; font-size: 13px; }
+.footer-con ul li a{ color: #333; padding-left: 25px; }
+.footer-con ul li a:hover{ color: #fe505a; }
+.footer-info{ float: left; font-size: 18px; padding: 15px; }
+.footer-info span{ color: #4c4145; font-size: 16px; font-weight: bold; }
+.social{ padding: 15px 0; }
+.social a{ margin-right: 5px; }
+.logo-bot{ width: 100px; margin-bottom: 10px; }

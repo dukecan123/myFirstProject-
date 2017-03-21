@@ -1,0 +1,14 @@
+.inputarea,.replyarea{ overflow: hidden; border-bottom: 2px solid #fff; padding-bottom: 30px; }
+.inputarea textarea,.replyarea textarea{ width: 100%; border: 1px solid #dbdee1; color: #333; height: 100px; resize: none; border-radius: 5px; outline: none; box-sizing: border-box; padding: 10px; margin-bottom: 10px; }
+.inputarea input[type='button'],.replyarea input[type='button']{ background: #fe505a; color: #fff; border: 1px solid #f42a36; float: right; cursor: pointer; border-radius: 3px; padding: 8px 15px; font-size: 14px; font-weight: bold; }
+.comment-list{ padding: 20px 0 10px; border-bottom: 2px solid #fff; }
+.user-info img{ width: 45px; height: 45px; }
+.user-info .info{ display: inline-block; vertical-align: top; padding: 5px; }
+.info .name{ font-weight: bold; font-size: 14px; }
+.info .time{ color: #969b9f; font-size: 12px; }
+.user-info .reply{ float: right; color: #fe505a; padding-left: 20px; background: url(../img/reply.png) no-repeat left center; }
+.comment-con{ font-size: 13px; color: #4c4145; line-height: 24px; margin-bottom: 10px; }
+.replyarea{ display: none; border: none; padding: 0; }
+.comment{ overflow: hidden; }
+#show-more{ background: none; text-align: center; border: 1px solid #000000; border-radius: 3px; padding: 8px 15px; outline: none; margin: 20px auto; display: block; cursor: pointer; }
+#show-more:hover{ background: #666; color: #fff; }

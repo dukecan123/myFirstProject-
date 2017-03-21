@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>即将上映</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;box-sizing: border-box;}
+			.bos{width: 100%;position: fixed; height:100%;overflow: hidden; background:url(single-pageimg/bg-image.jpg) no-repeat;background-size: cover;position:absolute;}
+			.top{width: 100%;height: 200px;position:relative;}
+			.top img{width: 302px;height: 50px;position: absolute;left: 50%;top: 100px;margin-left:-151px;}
+			.top .top1{font-size: 40px;font-family: "blackadder itc";position: absolute;left: 50%;top: 158px;margin-left:-91px;}
+			
+			.con{width: 100%;height: 200px;position: relative;margin-top: 20px;}
+			.con .conff{width: 840px;height: 200px;position: absolute;left: 50%;margin-left: -400px;margin-top: 20px;}
+			.con .conff .ss{width: 200px;height: 200px;background-color:#4d4145;float: left;margin-right: 10px; opacity: 0.7;border-radius:50%;}
+			.con .conff .ss .ss1{width: 180px;height: 180px;margin-left: 10px;margin-top: 10px;border-radius:50%;border: 3px solid #fff;background-color: #777;}
+			.con .conff .ss .ss1 span{display: block;width: 160px;height: 50px; margin-left: 5px;margin-top:40px;font-size: 50px;color: #fff;font-family: "bodoni mt";text-align:center;}
+			.con .conff .ss .ss1 a{display: block; width:172px;font-size: 30px;color: #fff;text-align:center;}
+			
+			.bot{width: 1000px;position:relative;left: 50%;top: 60px;margin-left: -500px;text-align:center;color: #fff;}
+			
+			.bott{width: 100%;height:23px;position:absolute;bottom: 23px;margin-top: 50px;}
+			.bott a{display: block;line-height: 23px;text-align:center;font-size: 12px;color: #fff;}
+			
+			#back{display: block; margin: 100px auto; width: 100px; text-align: center; padding: 7px 15px; text-decoration: none; color: #4c4145; border-radius: 3px; background: #ffd564; font-weight: bold; border: none;}
+		</style>
+		<script type="text/javascript">
+		 window.onload = function(){
+            var dd = document.getElementById("d");
+            var dh = document.getElementById("h");
+            var ds = document.getElementById("s");
+            var dm = document.getElementById("m");
+            var endTime = new Date("2016/12/30 17:30:00"); // 最终时间
+            setInterval(clock,1000);
+            function clock(){
+                var nowTime = new Date();
+                var second = parseInt((endTime.getTime() - nowTime.getTime()) / 1000);
+                var d = parseInt(second / 3600 / 24);  //天数
+                var h = parseInt(second / 3600  % 24)  // 小时
+                var m = parseInt(second / 60 %60);
+                var s = parseInt(second %60); // 当前的秒
+//              console.log(s);
+                d<10 ? d="0"+d : d;
+                h<10 ? h="0"+h : h;
+                m<10 ? m="0"+m : m;
+                s<10 ? s="0"+s : s;
+                dd.innerHTML = d;
+                dh.innerHTML = h;
+                ds.innerHTML = s;
+                dm.innerHTML = m;
+            }
+        }
+		</script>
+	</head>
+	<body>
+		<div class="bos">
+			<div class="top">
+				<img src="single-pageimg/logo-lg.png"/>
+				<p class="top1">即将到来</p>
+			</div>
+			<div class="con">
+				<div class="conff">
+					<div class="ss">
+						<div class="ss1">
+							<span id="d"></span>
+							<a>天</a>
+						</div>
+					</div>
+					<div class="ss">
+						<div class="ss1">
+							<span id="h"></span>
+							<a>时</a>
+						</div>
+					</div>
+					<div class="ss">
+						<div class="ss1">
+							<span id="m"></span>
+							<a>分</a>
+						</div>
+					</div>
+					<div class="ss">
+						<div class="ss1">
+							<span id="s"></span>
+							<a>秒</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="bot">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent sed tristique massa. Aenean iaculis diam nec ligula ullamcorper eu tempus dolor ullamcorper. Morbi in nisi tincidunt neque gravida facilisis. Pellentesque mattis nisl eget neque scelerisque adipiscing. Vestibulum euismod commodo odio sit amet congue. Donec ut sem vel mauris sodales egestas. Nulla eget lorem vitae diam ullamcorper tincidunt ut vel est.</p>
+			<div>
+				<a href="gallery-four.html" id="back">返回</a>
+			</div>
+			<div class="bott">
+			<a>Is the most shining star was out of reach</a>
+			</div>
+		</div>
+	</body>
+</html>

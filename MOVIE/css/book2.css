@@ -1,0 +1,280 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	
+}
+.inner { 
+	width:1140px;
+	margin: 0 auto;
+}
+a:focus {outline-style: none;}
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+.book {
+	padding-top: 100px;
+	width: 232px;
+	height: 260px;
+	text-align: center;
+	margin: 0 auto;
+}
+.book img {
+	width: 77;
+	height: 70px;
+}
+.book h3 {
+	color: #4c4145;
+	font-size: 30px;
+	font-weight: 900;
+}
+.book p {
+	padding-top: 15px;
+	font-size: 16px;
+	height: 44px;
+}
+.butt { padding-left: 20px; }
+.btn1 {
+	display: block;
+	width: 101px;
+	height: 25px;
+	/*background: url(../imsges/icon.png) no-repeat 0px 0px;*/
+	margin-right: 5px;
+	color: #222222;
+}
+.btn1:hover{
+	color: #000;
+}
+.btn2 {
+	display: block;
+	width: 91px;
+	height: 25px;
+	/*background: url(../imsges/icon.png) no-repeat -1px -32px;*/
+	color: #222222;
+}
+.btn2:hover{
+	color: #000;
+}
+
+.left {
+	width: 379px;
+	height: 24px;
+	background: url(../imsges/what_bg1.png) no-repeat 0px bottom;
+	text-indent: 58px;
+	color: #dbdee1;
+}
+.right {
+	width: 761px;
+	height: 23px;
+	
+}
+.right .a_sit {
+	width: 378px;
+	height: 23px;
+	background: url(../imsges/what_bg2.png) no-repeat;
+	text-indent: 65px;
+}
+.right .bor_1 {
+	width: 378px;
+	height: 22px;
+	border-bottom: 1px solid #dbdee1;
+}
+.price {
+	padding-top: 70px;
+	width: 640px;
+	height: 140px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.price .l{
+	width: 300px;
+	line-height: 40px;
+	border-right: 1px solid #4c4145;
+}
+.price .r{
+	width: 300px;
+	line-height: 40px;
+}
+.price .l span,.price .r span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 15px;
+}
+.maney_10 { background: #fff0c7; }
+.maney_20 { background: #ffc8cb; }
+.maney_30 { background: #cdb4bd; }
+.maney_not { background: #dbdee1; }
+.maney_you { background: #4c4145; }
+.price p {
+	padding-top: 60px;
+	width: 380px;
+	height: 22px;
+	border-bottom: 5px solid #969b9f;
+	margin-left: 100px;
+	text-align: center;
+	font-size: 12px;
+	color: #b6b8ba;
+}
+.zuohao {
+	width: 945px;
+	height: 560px;
+	margin: 0 auto;
+}
+.abc {
+	width: 100px;
+}
+.abc span {
+	display: block;
+	width: 30px;
+	margin: 5px;
+	border: 1px solid #4c4145;
+	font-size: 13px;
+	line-height: 30px;
+	text-align: center;
+}
+.box { padding-left: 160px; }
+.num_table {
+	width: 630px;
+	height: 491px;
+}
+.num_table .one {
+	padding-left: 40px;
+	height: 40px;
+}
+.num_table .eight {
+	padding-left: 80px;
+	height: 40px;
+}
+.num_table .nine {
+	padding-left: 160px;
+	height: 40px;
+}
+.num_table .eleven {
+	padding-left: 200px;
+}
+.num_table .two,.num_table .five {
+	height: 40px;
+}
+.num_table span{
+	float: left;
+	width: 28px;
+	height: 28px;
+	background: #fff0c7;
+	margin-right: 5px;
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+	text-indent: -999em;
+	font-size: 12px;
+	cursor: pointer;
+}
+.num_table .five span {
+	background: #ffc8cb;
+}
+.num_table .nine span {
+	background: #cdb4bd;
+}
+.num_table  .space { margin-top: 30px; }
+.result {
+	padding-top: 30px;
+	width: 50px;
+	height: 420px;
+	background: #4c4145;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+}
+.num_table .specical {background: #dbdee1; }
+.num_table .public .curent1 {
+	background: #4c4145;
+	text-indent: 0em;
+}
+.num_table .public .curentClick {
+	background: #4c4145;
+	text-indent: 0em;
+}
+.txt {
+	padding-top: 30px;
+	width: 50px;
+	height: 300px;
+	overflow: hidden;
+}
+.txt p { line-height: 30px; }
+.num123 {
+	padding-left: 155px;
+	width: 650px;
+	height: 30px;
+}
+.num123 span{
+	display: block;
+	float: left;
+	margin-right: 4px;
+	width: 28px;
+	line-height: 28px;
+	border: 1px solid #4c4145;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+.tab {
+	width: 400px;
+	height: 150px;
+	margin: 0 auto;
+}
+.next {
+	padding-top: 50px;
+	width: 180px;
+	height: 150px;
+}
+
+.next .cont {
+	border-radius: 5px;
+	position: relative;
+	padding: 5px;
+	display: block;
+	text-align: center;
+	width: 170;
+	height: 50px;
+	color: #f34852;
+	text-decoration: none;	
+
+}
+.next_step,.choose_a_sit  {
+	display: block;
+	height: 25px;
+}
+.choose_a_sit { color: #666;}
+.next_step { border-bottom: 1px solid #dbdee1; }
+.next .cont:hover {
+	background: #f34852;
+	color: #fff;
+}
+.next .cont:hover .choose_a_sit{
+	color: #fff;
+}
+.next .cont p {
+	position: absolute;
+	left: 158px;
+	top: 8px;
+	font-size: 30px;
+}
+.next .cont .prev {
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	font-size: 30px;
+}

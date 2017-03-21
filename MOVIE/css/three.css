@@ -1,0 +1,22 @@
+*{margin: 0;padding: 0;border: 0;}
+img{vertical-align: top;border: 0;}
+a{text-decoration: none;}
+.box{width: 100%;height: auto;background: #fff; margin-bottom: 50px;}
+.box .c{width: 1140px;height: auto;margin: 0 auto;box-sizing: border-box;position: relative;padding-top: 44px;}
+.top{height: 428px;width: 1140px;padding-top: 60px;box-sizing: border-box;}
+.offers{width: 156px;height: 15px;background: url(../img/sj.png)no-repeat left center;padding-left: 30px;font-size: 15px;font-family: "microsoft yahei";line-height: 15px;color: #4c4145;position: absolute;left: 0px;top: 60px;}
+.Odeon{color: #fe505a;width: auto;height: 16px;text-align: center;line-height: 16px;font-family: "microsoft yahei";font-size: 15px;margin: 0 auto;margin-bottom: 27px;}
+/*图片的排列*/
+.one{position: relative;margin: 0 15px;box-sizing: border-box;width: 255px;height: 325px;float: left;}
+.pic-a,.pic-aa{position: absolute;left: 15px;}
+.pic-aa{opacity: 0;filter: alpha(opacity:0);}
+.two{position: relative;margin: 0 15px;float: left;box-sizing: border-box;width: 255px;height: 325px;}
+.pic-bb,.pic-b{position: absolute;left: 15px;}
+.pic-bb{opacity: 0;filter: alpha(opacity:0);}
+.three{position: relative;margin: 0 15px;float: left;box-sizing: border-box;width: 255px;height: 325px;}
+.pic-cc,.pic-c{position: absolute;left: 15px;}
+.pic-cc{opacity: 0;filter: alpha(opacity:0);}
+.four{position: relative;margin: 0 15px;float: left;box-sizing: border-box;width: 255px;height: 325px;}
+.pic-dd,.pic-d{position: absolute;left: 15px;}
+.pic-dd{opacity: 0;filter: alpha(opacity:0);}
+

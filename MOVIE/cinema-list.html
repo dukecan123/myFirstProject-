@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>影院列表</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cinema.css"/>
+		<!--[if lt IE 9]>
+  			<script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		<![endif]-->
+		<style type="text/css">
+			@font-face {
+				font-family: 'iconfont';
+				src: url('font/iconfont.eot');
+				src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+			}
+			
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 16px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+				font-size: 35px;
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="warp">
+			<!--头部导航-->
+			<div class="header">
+				<div class="header-con">
+					<a class="logo" href="index.html"><img src="img/logo.png"/></a>				
+					<ul class="navbar">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="cinema-list.html">影院</a></li>
+						<li><a href="book1.html">购票观影</a></li>
+						<li><a href="page-list.html">新闻消息</a></li>
+						<li><a href="movie1.html">电影列表</a></li>
+						<li><a id="show-search" href="">搜索</a></li>
+					</ul>										
+					<div class="panel">
+						<div class="me">
+							<span><img src="img/index/head.jpg"/></span>
+							<a class="signin" href="two.html">登录</a>
+							<a href="one.html" class="btn-book">联系我们</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部搜索-->
+			<div id="search" class="search">
+				<div class="search-inner">
+					<form class="search-form" method="post">
+						<input class="search-field" type="text" id="" placeholder="search" />
+						<span tabindex="0" hidefocus="true" id="search-by">电影名</span>
+						<ul id="search-select">
+							<li class="first">电影名</li>
+							<li>演员</li>
+							<li>导演</li>
+							<li>年份</li>
+							<li>类型</li>
+						</ul>
+						<input id="search-submit" type="submit" value="搜索"/>
+					</form>
+				</div>
+			</div>
+			<!--页面主体-->
+			<div class="main">
+				<h2 class="main-title">影院</h2>
+				<div class="select-cinema">
+					<label>城市：</label>
+					<span tabindex="0" hidefocus="true" id="city" class="city">广州</span>
+					<div id="city-list">
+						<ul>
+							<li>广州</li>
+							<li>深圳</li>
+							<li>珠海</li>
+							<li>佛山</li>
+							<li>中山</li>
+							<li>东莞</li>
+						</ul>
+					</div>
+					
+					<div id="sort-cinema" class="sort">
+						<span>筛选：</span>
+						<a class="active" href="javasrcipt:void(0);">全部</a>
+						<a title="tianhe" href="javasrcipt:void(0);">天河区</a>
+						<a title="baiyun" href="javasrcipt:void(0);">白云区</a>
+						<a title="yuexiu" href="javasrcipt:void(0);">越秀区</a>
+						<a title="haizhu" href="javasrcipt:void(0);">海珠区</a>
+						<a title="panyu" href="javasrcipt:void(0);">番禺区</a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="single-ciname" title="baiyun">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">8.0</span>
+							</div>
+							<img src="img/c1.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">广州横店电影城</a></p>
+					</div>
+					<div class="single-ciname" title="tianhe">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">7.2</span>
+							</div>
+							<img src="img/c2.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">大地影院天河员宫店</a></p>
+					</div>
+					<div class="single-ciname" title="tianhe">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">7.2</span>
+							</div>
+							<img src="img/c3.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">广州天河电影城</a></p>
+					</div>
+					<div class="single-ciname" title="tianhe">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">7.0</span>
+							</div>
+							<img src="img/c4.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">中影国际影城-广州天河太阳新天地店</a></p>
+					</div>
+					<div class="single-ciname" title="yuexiu">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">7.0</span>
+							</div>
+							<img src="img/c5.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">广州中影乐佳影院</a></p>
+					</div>
+					<div class="single-ciname" title="haizhu">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">7.0</span>
+							</div>
+							<img src="img/c6.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">广州飞扬影城-正佳店</a></p>
+					</div>
+					<div class="single-ciname" title="tianhe">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">7.0</span>
+							</div>
+							<img src="img/c7.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">东圃摩登电影城</a></p>
+					</div>
+					<div class="single-ciname" title="tianhe">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">7.0</span>
+							</div>
+							<img src="img/c8.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">广州哈艺时尚影城-科韵店</a></p>
+					</div>
+					<div class="single-ciname" title="panyu">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">7.0</span>
+							</div>
+							<img src="img/c9.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">广州金逸影城-维家思店</a></p>
+					</div>
+					<div class="single-ciname" title="tianhe">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">7.0</span>
+							</div>
+							<img src="img/c0.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">喜洋时代-东圃四季荟店</a></p>
+					</div>
+					<div class="single-ciname" title="baiyun">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">8.6</span>
+							</div>
+							<img src="img/c11.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">左岸国际电影城</a></p>
+					</div>
+					<div class="single-ciname" title="baiyun">
+						<a href="single-cinema.html">
+							<div class="mask">
+								<span class="best-rate">9.0</span>
+							</div>
+							<img src="img/c12.jpg"/>
+						</a>
+						<p class="ciname-name"><a href="single-cinema.html">橙天嘉禾影城广州白云店</a></p>
+					</div>
+					<div class="last-fix"></div>
+				</div>
+				<!--页面切换-->
+				<div class="page">
+					<span id="prev">上一页</span>
+					<span id="next">下一页</span>
+				</div>
+			</div>
+			<!--页面尾部-->
+			<div class="footer">
+				<div class="footer-con">
+					<ul>
+						<li><a href="">新闻</a></li>
+						<li><a href="">影院</a></li>
+						<li><a href="">购票</a></li>
+						<li><a href="">评分</a></li>
+					</ul>
+					<ul>
+						<li><a href="">即将上映</a></li>
+						<li><a href="">正在热映</a></li>
+						<li><a href="">观影指南</a></li>
+						<li><a href="">电影票房</a></li>
+					</ul>
+					<ul>
+						<li><a href="">服务条款</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">关于我们</a></li>
+					</ul>
+					<div class="footer-info">
+						<p>
+							<img class="logo-bot" src="img/index/logo-dark.png"/><br />
+							<span>关注我们</span>
+						</p>
+						<div id="social" class="social">
+							<a href=""><i class="iconfont">&#xe606;</i></a>
+							<a href=""><i class="iconfont">&#xe675;</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--返回顶部-->
+		<div id="go-to-top"></div>
+		<script src="js/global.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

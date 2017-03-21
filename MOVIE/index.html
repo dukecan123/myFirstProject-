@@ -1,0 +1,688 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<style type="text/css">
+			@font-face {
+				font-family: 'iconfont';
+				src: url('font/iconfont.eot');
+				src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+			}
+			
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 16px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+				font-size: 35px;
+				color: #999;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!--头部导航-->
+			<div class="header">
+				<div class="header-con">
+					<a class="logo" href="index.html"><img src="img/logo.png" /></a>
+					<ul class="navbar">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="cinema-list.html">影院</a>
+						</li>
+						<li>
+							<a href="book1.html">购票观影</a>
+						</li>
+						<li>
+							<a href="page-list.html">新闻消息</a>
+						</li>
+						<li>
+							<a href="movie1.html">电影列表</a>
+						</li>
+						<li>
+							<a id="show-search" href="">搜索</a>
+						</li>
+					</ul>
+					<div class="panel">
+						<div class="me">
+							<span><img src="img/index/head.jpg"/></span>
+							<a class="signin" href="two.html">登录</a>
+							<a href="one.html" class="btn-book">联系我们</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部搜索-->
+			<div id="search" class="search">
+				<div class="search-inner">
+					<form class="search-form" method="post">
+						<input class="search-field" type="text" id="" placeholder="search" />
+						<span tabindex="0" hidefocus="true" id="search-by">电影名</span>
+						<ul id="search-select">
+							<li class="first">电影名</li>
+							<li>演员</li>
+							<li>导演</li>
+							<li>年份</li>
+							<li>类型</li>
+						</ul>
+						<input id="search-submit" type="submit" value="搜索" />
+					</form>
+				</div>
+			</div>
+			<!--轮播图-->
+			<div id="banner" class="banner">
+				<div id="next-btn"></div>
+				<div id="pre-btn"></div>
+				<div class="banner-info">
+					<a href="single-page.html"><img src="img/index/b4.jpg" /></a>
+					<div class="banner-title">
+						<p>2016秋冬档国产强片前瞻</p>
+						<p class="title-sm">"潘金莲""长城"受瞩目 成龙双片抢占贺岁档</p>
+					</div>
+				</div>
+				<div class="banner-info">
+					<a href="single-page.html"><img src="img/index/b5.jpg" /></a>
+					<div class="banner-title">
+						<p>"韩国HBO"十年崛起之路</p>
+						<p class="title-sm">"内容领潮者"tvN开启韩剧新时代</p>
+					</div>
+				</div>
+				<div class="banner-info">
+					<a href="single-page.html"><img src="img/index/b6.jpg" /></a>
+					<div class="banner-title">
+						<p>那些套路满满的香港恐怖经典</p>
+						<p class="title-sm">鬼怪+有趣+混搭=拍摄恐怖片的正确姿势</p>
+					</div>
+				</div>
+				<div class="banner-info">
+					<a href="single-page.html"><img src="img/index/b7.jpg" /></a>
+					<div class="banner-title">
+						<p>大卫·林奇迷幻镜头下的女性群像</p>
+						<p class="title-sm">写在《穆赫兰道》上映十五周年之际</p>
+					</div>
+				</div>
+			</div>
+			<!--页面主体-->
+			<div class="main">
+				<!--今日推荐-->
+				<div class="best-movie">
+					<div class="best-top">
+						今日推荐
+					</div>
+					<div id="best" class="best-mid">
+						<div class="movie-list">
+							<img src="img/index/m1.jpg" />
+							<span class="best-rate">7.1</span>
+							<ul class="movie-info">
+								<li>
+									<!--<p class="movie-time">169 min</p>
+									<p>Adventure | Drama | Fantasy</p>
+									<p>38 comments</p>-->
+									<p>类型：冒险/家庭</p>
+									<p>国家地区：英国|加拿大|美国</p>
+									<p>导演：史蒂文·斯皮尔伯格</p>
+									<p>主演：鲁比·巴恩希尔/马克·里朗斯</p>
+								</li>
+								<li class="more">
+									<a class="" href="">MORE&nbsp;></a>
+								</li>
+							</ul>
+						</div>
+						<div class="movie-list">
+							<img src="img/index/m2.jpg" />
+							<span class="best-rate">6.8</span>
+							<ul class="movie-info">
+								<li>
+									<p>类型：动作/剧情</p>
+									<p>国家地区：中国|中国香港</p>
+									<p>导演：吴品儒</p>
+									<p>主演：谢霆锋/刘青云</p>
+								</li>
+								<li class="more">
+									<a class="" href="">MORE&nbsp;></a>
+								</li>
+							</ul>
+						</div>
+						<div class="movie-list">
+							<img src="img/index/m3.jpg" />
+							<span class="best-rate">7.0</span>
+							<ul class="movie-info">
+								<li>
+									<p>类型：动作/犯罪</p>
+									<p>国家地区：法国|美国</p>
+									<p>导演：丹尼斯·甘塞尔</p>
+									<p>主演：杰森·斯坦森/杰西卡·阿尔芭</p>
+								</li>
+								<li class="more">
+									<a class="" href="">MORE&nbsp;></a>
+								</li>
+							</ul>
+						</div>
+						<div class="movie-list">
+							<img src="img/index/m4.jpg" />
+							<span class="best-rate">7.2</span>
+							<ul class="movie-info">
+								<li>
+									<p>类型：动作/冒险</p>
+									<p>国家地区：美国</p>
+									<p>导演：爱德华·兹威克</p>
+									<p>主演：汤姆·克鲁斯/寇碧·史莫德斯</p>
+								</li>
+								<li class="more">
+									<a class="" href="">MORE&nbsp;></a>
+								</li>
+							</ul>
+						</div>
+						<div class="movie-list">
+							<img src="img/index/m5.jpg" />
+							<span class="best-rate">6.9</span>
+							<ul class="movie-info">
+								<li>
+									<p>类型：动作/科幻</p>
+									<p>国家地区：俄罗斯</p>
+									<p>导演：萨里·奥德赛耶</p>
+									<p>主演：瓦蒂姆·提萨拉提/维奥莱塔·吉特孟斯塔亚</p>
+								</li>
+								<li class="more">
+									<a class="" href="">MORE&nbsp;></a>
+								</li>
+							</ul>
+						</div>
+						<div class="movie-list">
+							<img src="img/index/m6.jpg" />
+							<span class="best-rate">7.4</span>
+							<ul class="movie-info">
+								<li>
+									<p>类型：悬疑/惊悚</p>
+									<p>国家地区：美国|日本|土耳其|匈牙利 </p>
+									<p>导演：朗·霍华德</p>
+									<p>主演：汤姆·汉克斯/菲丽希缇·琼斯</p>
+								</li>
+								<li class="more">
+									<a class="" href="">MORE&nbsp;></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="best-bot">
+						CHECK ALL MOVIES NOW PLAYING
+					</div>
+				</div>
+				<!--主体搜索-->
+				<div class="search-yours">
+					<img id="search-img" class="search-img" src="img/index/location.png" />
+					<div class="search-right">
+						<span class="search-by">搜索：</span>
+						<ul id="select-list" class="select-list">
+							<li>
+								<a class="active" href="" title="img/index/location.png">城市</a>
+							</li>
+							<li>
+								<a href="javascript:" title="img/index/cinema.png">影院</a>
+							</li>
+							<li>
+								<a href="javascript:" title="img/index/categroy.png">类型</a>
+							</li>
+							<li>
+								<a href="javascript:" title="img/index/actors.png">演员</a>
+							</li>
+							<li>
+								<a href="javascript:" title="img/index/director.png">导演</a>
+							</li>
+							<li>
+								<a href="javascript:" title="img/index/country.png">地区</a>
+							</li>
+						</ul>
+						<input class="search-input" type="text" id="search-input" />
+						<input class="search-btn" type="button" id="search-btn" value="搜索" />
+						<div class="select-dropdown">
+							<ul class="select-group">
+								<li>广州</li>
+								<li>深圳</li>
+								<li>珠海</li>
+								<li>佛山</li>
+								<li>中山</li>
+								<li>东莞</li>
+								<li>惠州</li>
+							</ul>
+							<ul class="select-group">
+								<li>四季荟喜洋电影院</li>
+								<li>车陂国际影城</li>
+								<li>哈艺时尚影城（合生骏景店）</li>
+								<li>哈艺时尚影城（天河科韵店）</li>
+								<li>东圃摩登电影城</li>
+							</ul>
+							<ul class="select-group">
+								<li>爱情</li>
+								<li>喜剧</li>
+								<li>动作</li>
+								<li>剧情</li>
+								<li>恐怖</li>
+								<li>惊悚</li>
+							</ul>
+							<ul class="select-group">
+								<li>古天乐</li>
+								<li>梁朝伟</li>
+								<li>张家辉</li>
+								<li>刘青云</li>
+								<li>梁家辉</li>
+								<li>吴彦祖</li>
+							</ul>
+							<ul class="select-group">
+								<li>李安</li>
+								<li>冯小刚</li>
+								<li>张艺谋e</li>
+								<li>徐克</li>
+								<li>王家卫</li>
+							</ul>
+							<ul class="select-group">
+								<li>美国</li>
+								<li>大陆</li>
+								<li>香港</li>
+								<li>台湾</li>
+								<li>日本</li>
+								<li>韩国</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--电影热映-->
+				<div class="now">
+					<h2 class="main-title">现在的电影院</h2>
+					<div id="now-left" class="now-left">
+						<div class="movie-left">
+							<div class="movie-img">
+								<a href=""><img src="img/index/s1.jpg" /></a>
+							</div>
+							<div class="movie-inf">
+								<h3 class="movie-title"><a href="">湄公河行动 (2016)</a></h3>
+								<p class="movie-time">124分钟</p>
+								<p class="movie-option">
+									<a href="">动作</a>
+									<span>|</span>
+									<a href="">剧情</a>
+									<span>|</span>
+									<a href="">犯罪</a>
+								</p>
+								<p>地区：
+									<a href="">中国 </a>
+									<span>|</span>
+									<a href="">中国香港</a>
+								</p>
+								<p>主演：
+									<a href="">张涵予 </a>
+									<span>|</span>
+									<a href="">彭于晏</a>
+								</p>
+								<div class="movie-rate">
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+								</div>
+								<div class="movie-rating">7.1</div>
+							</div>
+						</div>
+						<div class="movie-left">
+							<div class="movie-img">
+								<a href=""><img src="img/index/s2.jpg" /></a>
+							</div>
+							<div class="movie-inf">
+								<h3 class="movie-title"><a href="">宾虚 (2016)</a></h3>
+								<p class="movie-time">124分钟</p>
+								<p class="movie-option">
+									<a href="">冒险</a>
+									<span>|</span>
+									<a href="">剧情</a>
+									<span>|</span>
+									<a href="">历史</a>
+								</p>
+								<p>地区：
+									<a href="">美国</a>
+								</p>
+								<p>主演：
+									<a href="">杰克·休斯顿</a>
+								</p>
+								<div class="movie-rate">
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+								</div>
+								<div class="movie-rating">6.6</div>
+							</div>
+						</div>
+						<div class="movie-right">
+							<div class="movie-inf">
+								<h3 class="movie-title"><a href="">鲁滨逊漂流记 (2016)</a></h3>
+								<p class="movie-time">90分钟</p>
+								<p class="movie-option">
+									<a href="">动画</a>
+									<span>|</span>
+									<a href="">冒险</a>
+									<span>|</span>
+									<a href="">喜剧</a>
+								</p>
+								<p>地区：
+									<a href="">比利时</a>
+									<span>|</span>
+									<a href="">法国</a>
+								</p>
+								<p>主演：
+									<a href="">马提亚斯·施维赫夫</a>
+								</p>
+								<div class="movie-rate">
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+								</div>
+								<div class="movie-rating">6.3</div>
+							</div>
+							<div class="movie-img">
+								<a href=""><img src="img/index/s3.jpg" /></a>
+							</div>
+						</div>
+						<div class="movie-right">
+							<div class="movie-inf">
+								<h3 class="movie-title"><a href="">王牌逗王牌 (2016)</a></h3>
+								<p class="movie-time">102分钟</p>
+								<p class="movie-option">
+									<a href="">喜剧</a>
+									<span>|</span>
+									<a href="">冒险</a>
+								</p>
+								<p>地区：
+									<a href="">中国</a>
+								</p>
+								<p>主演：
+									<a href="">刘德华</a>
+									<span>|</span>
+									<a href="">黄晓明</a>
+								</p>
+								<div class="movie-rate">
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+								</div>
+								<div class="movie-rating">5.8</div>
+							</div>
+							<div class="movie-img">
+								<a href=""><img src="img/index/s4.jpg" /></a>
+							</div>
+						</div>
+						<div class="movie-left">
+							<div class="movie-img">
+								<a href=""><img src="img/index/s5.jpg" /></a>
+							</div>
+							<div class="movie-inf">
+								<h3 class="movie-title"><a href="">七月与安生 (2016)</a></h3>
+								<p class="movie-time">110分钟</p>
+								<p class="movie-option">
+									<a href="">爱情</a>
+									<span>|</span>
+									<a href="">剧情</a>
+								</p>
+								<p>地区：
+									<a href="">中国</a>
+								</p>
+								<p>主演：
+									<a href="">周冬雨</a>
+									<span>|</span>
+									<a href="">马思纯</a>
+								</p>
+								<div class="movie-rate">
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+								</div>
+								<div class="movie-rating">6.0</div>
+							</div>
+						</div>
+						<div class="movie-left">
+							<div class="movie-img">
+								<a href=""><img src="img/index/s6.jpg" /></a>
+							</div>
+							<div class="movie-inf">
+								<h3 class="movie-title"><a href="">追凶者也 (2016)</a></h3>
+								<p class="movie-time">113分钟</p>
+								<p class="movie-option">
+									<a href="">犯罪</a>
+									<span>|</span>
+									<a href="">剧情</a>
+									<span>|</span>
+									<a href="">喜剧</a>
+								</p>
+								<p>地区：
+									<a href="">中国</a>
+								</p>
+								<p>主演：
+									<a href="">刘烨</a>
+									<span>|</span>
+									<a href="">张译</a>
+								</p>
+								<div class="movie-rate">
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+								</div>
+								<div class="movie-rating">6.1</div>
+							</div>
+						</div>
+						<div class="movie-right">
+							<div class="movie-inf">
+								<h3 class="movie-title"><a href="">大话西游3(2016)</a></h3>
+								<p class="movie-time">93分钟</p>
+								<p class="movie-option">
+									<a href="">奇幻</a>
+									<span>|</span>
+									<a href="">喜剧</a>
+									<span>|</span>
+									<a href="">冒险</a>
+								</p>
+								<p>地区：
+									<a href="">中国</a>
+								</p>
+								<p>主演：
+									<a href="">韩庚</a>
+									<span>|</span>
+									<a href="">唐嫣</a>
+									<span>|</span>
+									<a href="">吴京</a>
+								</p>
+								<div class="movie-rate">
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+								</div>
+								<div class="movie-rating">7.1</div>
+							</div>
+							<div class="movie-img">
+								<a href=""><img src="img/index/s7.jpg" /></a>
+							</div>
+						</div>
+						<div class="movie-right">
+							<div class="movie-inf">
+								<h3 class="movie-title"><a href="">反贪风暴2(2016)</a></h3>
+								<p class="movie-time">95分钟</p>
+								<p class="movie-option">
+									<a href="">动作</a>
+									<span>|</span>
+									<a href="">剧情</a>
+									<span>|</span>
+									<a href="">悬疑</a>
+								</p>
+								<p>地区：
+									<a href="">中国</a>
+									<span>|</span>
+									<a href="">中国香港</a>
+								</p>
+								<p>主演：
+									<a href="">古天乐</a>
+									<span>|</span>
+									<a href="">张智霖</a>
+								</p>
+								<div class="movie-rate">
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+									<img src="img/index/star.png" />
+								</div>
+								<div class="movie-rating">6.7</div>
+							</div>
+							<div class="movie-img">
+								<a href=""><img src="img/index/s8.jpg" /></a>
+							</div>
+						</div>
+					</div>
+					<!--侧栏-->
+					<div class="now-right">
+						<div class="right-inner">
+							<div class="side-banner">
+								<a href=""><img src="img/index/ban1.jpg" /></a>
+								<p class="ban-desc">《凶手还未睡》讲述了一个开了头必须知道结果才能“入睡”的故事</p>
+							</div>
+							<div class="side-banner">
+								<a href=""><img src="img/index/ban2.jpg" /></a>
+								<p class="ban-desc">《小明和他的小伙伴们》讲述了因生活所迫而走投无路的刘背（乔杉）..</p>
+							</div>
+							<div id="app" class="app">
+								<h1><img src="img/index/app.png"/></h1>
+								<p>
+									<a href="javascript:"><img id="apple" src="img/index/apple-store.svg" /></a>
+								</p>
+								<p>
+									<a href="javascript:"><img id="google" src="img/index/google-play.svg" /></a>
+								</p>
+								<p>
+									<a href="javascript:"><img id="windows" src="img/index/windows-store.svg" /></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--最新资讯-->
+				<div class="latest-news">
+					<h2 class="main-title">最新消息</h2>
+					<div id="news" class="news-contont">
+						<div class="news-box">
+							<a href="" class="news-box-img">
+								<img src="img/index/pic-sm1.jpg" />
+								<!--<span class="share">+</span>-->
+							</a>
+							<div class="news-con">
+								<p class="news-title">爵迹 (2016)</p>
+								<p class="news-date">22 October 2013</p>
+								<p class="desc">在奥汀大陆这个神秘的世界里，西之亚斯兰帝国七度王爵银尘寻找到自己的使徒麒零，却无意中发现了上代一度王爵吉尔伽美什可能还活着的秘密，于是义无反顾的投入到追寻之中，而与此同时..</p>
+								<a class="read-more" href="">了解电影&nbsp;<span>></span></a>
+							</div>
+						</div>
+						<div class="news-box">
+							<a href="" class="news-box-img">
+								<img src="img/index/pic-sm2.jpg" />
+								<!--<span class="share">+</span>-->
+							</a>
+							<div class="news-con">
+								<p class="news-title">魁拔Ⅲ战神崛起 (2014)</p>
+								<p class="news-date">22 October 2013</p>
+								<p class="desc">上一集蛮吉父子、雪伦与镜心在涡流岛合力突破十二妖第一道防线，本片他们将遭遇萨库人大仓和粼妖姑娘海问香设下的更加诡异防线。神秘少年敖江和舰长远浪的出现让局面更加扑朔迷离，蛮吉凭真诚和勇敢艰难过关。</p>
+								<a class="read-more" href="">了解电影&nbsp;<span>></span></a>
+							</div>
+						</div>
+						<div class="news-box">
+							<a href="" class="news-box-img">
+								<img src="img/index/pic-sm3.jpg" />
+								<!--<span class="share">+</span>-->
+							</a>
+							<div class="news-con">
+								<p class="news-title">大话西游3 (2016)</p>
+								<p class="news-date">22 October 2013</p>
+								<p class="desc">在《大话西游之大圣娶亲》中死在牛魔王叉下的紫霞仙子（唐嫣饰），将会通过月光宝盒预先看到这一下场，为了避免惨剧发生，她选择回到从前不让至尊宝（韩庚饰）爱上自己。而至尊宝又再次重逢..</p>
+								<a class="read-more" href="">了解电影&nbsp;<span>></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--页面尾部-->
+			<div class="footer">
+				<div class="footer-con">
+					<ul>
+						<li>
+							<a href="">新闻</a>
+						</li>
+						<li>
+							<a href="">影院</a>
+						</li>
+						<li>
+							<a href="">购票</a>
+						</li>
+						<li>
+							<a href="">评分</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="">即将上映</a>
+						</li>
+						<li>
+							<a href="">正在热映</a>
+						</li>
+						<li>
+							<a href="">观影指南</a>
+						</li>
+						<li>
+							<a href="">电影票房</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="">服务条款</a>
+						</li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+						<li>
+							<a href="">关于我们</a>
+						</li>
+					</ul>
+					<div class="footer-info">
+						<p>
+							<img class="logo-bot" src="img/index/logo-dark.png" /><br />
+							<span>关注我们</span>
+						</p>
+						<div id="social" class="social">
+							<a href=""><i class="iconfont">&#xe606;</i></a>
+							<a href=""><i class="iconfont">&#xe675;</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--返回顶部-->
+		<div id="go-to-top"></div>
+		<script src="js/global.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

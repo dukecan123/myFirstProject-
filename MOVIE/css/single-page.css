@@ -1,0 +1,26 @@
+@import url("head.css");
+@import url("foot.css");
+@import url("comments.css");
+body{ font: 14px "microsoft yahei"; }
+
+.main{ width: 100%; /*overflow: hidden;*/ margin-bottom: 40px; }
+.main-top{ width: 100%; position: relative; padding-top: 50px; height: 190px;}
+.main-top img{ width: 100%; position: absolute; top: 0; left: 0; z-index: -1; }
+.main-top p{ padding-left: 180px; color: #4c4145; font-size: 26px; }
+.main-top p:first-child{ font-size: 36px; }
+.main-top .time{ font-size: 13px; color: #AAAAAA; line-height: 30px; padding-left: 200px; }
+.main-content{ width: 1170px; margin: 0 auto; }
+.main-content p{ color: #4c4145; font-size: 18px; line-height: 30px; margin-bottom: 40px; }
+.main-content p span{ font-weight: bold; }
+.main-content label{ font-size: 22px; font-weight: bold; color: #990000; display: block; margin-bottom: 40px; }
+.main-content .ques{ color: #990000; }
+.main-content .ques span{ font-family: arial; }
+.main-content .editer{ color: #666; font-size: 12px; float: right; }
+.main-content .keyword{ color: #aaaaaa; font-size: 16px; }
+.main-content .keyword a{ color: #08c; margin-right: 10px; }
+.main-content .keyword a:hover{ text-decoration: underline; }
+.main-content img{ width: 290px; }
+.main-content img.fl{ float: left; margin: 0 20px 20px 0; }
+.main-content img.fr{ float: right; margin: 0 0 20px 20px; }
+
+#tab-comments{ width: 1170px; margin: 0 auto; }

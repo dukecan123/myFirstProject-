@@ -1,0 +1,27 @@
+.header{ height: 55px; width: 100%; background: rgb(46,41,46); filter: alpha(opacity: 80); opacity: .8; position: absolute; z-index: 5; }
+.header-con{ width: 1170px; margin: 0 auto; position: relative; padding: 10px; }
+.logo{ position: absolute; top: 15px; left: 15px; }
+.logo img{ width: 111px; height: 17px; }
+.navbar{ float: right; padding-right: 300px; }
+.navbar li{ float: left; padding: 0 15px; line-height: 35px; }
+.navbar a{ font-size: 14px; color: #fafafa; }
+.navbar a:hover{ color: #ffd564; }
+.panel{ position: absolute; right: 15px; font-size: 12px; }
+.signin{ color: #ffd564; font-size: 13px; }
+/*.signin:after{ margin-left: 5px; width: 12px; height: 10px; display: inline-block; content: ''; background: url(../img/index/dwon.png) no-repeat;}*/
+.me span{ margin-right: 10px; }
+.me span img{ width: 31px; height: 31px; }
+.btn-book{ display: inline-block; margin-left: 45px; margin-top: 2px; padding: 7px 15px; color: #4c4145; border-radius: 3px; background: #ffd564; font-weight: bold; }
+
+#go-to-top{ width: 50px; height: 50px; background: url(../img/top-before.png) no-repeat; position: fixed; bottom: 100px; right: 100px; display: none; opacity: 0; filter: alpha(opacity:0); cursor: pointer; transition: all .3s; }
+#go-to-top:hover{ background-image: url(../img/top-after.png); }
+
+.search{ width: 100%; background: #dbdee1; height: 0; overflow: hidden; padding-top: 55px;position:relative }
+.search-inner{ width: 1170px; margin: 0 auto; padding-top: 25px; position: relative; }
+.search-field{ width: 820px; padding: 10px 170px 10px 20px; border: 1px solid #dbdee1; border-radius: 3px;  }
+#search-by{ background: #fff url(../img/down.png) no-repeat 120px center ; outline: none; display: inline-block; width: 150px; height: 36px; position: absolute; right: 160px; top: 26px; line-height: 36px; box-sizing: border-box; padding-left: 10px; border-left: 1px solid #dbdee1; }
+#search-submit{ background: #fe505a; border: 1px solid #f42a36; color: #fff; width: 158px; height: 36px; margin-left: -5px; font: 14px "microsoft yahei"; border-radius: 3px; }
+#search-select{ position: absolute; z-index: 5; right: 160px; top: 62px; width: 150px; background: #4c4145; box-sizing: border-box; padding: 0px 7px; height: 0; overflow: hidden; }
+#search-select li{ padding: 7px 10px; font-size: 13px; color: #b4b1b2; }
+#search-select li:hover{ color: #fff; }
+#search-select .first{ margin-top: 14px; }

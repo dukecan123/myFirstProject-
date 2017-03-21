@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+}
+.inner { 
+	width:1140px;
+	margin: 0 auto;
+}
+a:focus {outline-style: none;}
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+.book {
+	padding-top: 100px;
+	width: 500px;
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+}
+.book img {
+	width: 77;
+	height: 70px;
+}
+.book h3 {
+	color: #4c4145;
+	font-size: 30px;
+	font-weight: 900;
+}
+.book p {
+	font-size: 16px;
+	line-height: 50px;	
+}
+.cont { height: 378px; }
+.cont .l {
+	width: 40px;
+	height: 378px;
+	background: url(../imsges/bg_left.png) no-repeat;
+}
+.cont .m {
+	padding-top: 33px;
+	padding-left: 77px;
+	box-sizing: border-box;
+	width: 1060px;
+	height: 378px;
+	border-bottom: 1px solid #eceeef;
+	border-top: 1px solid #eceeef;
+}
+.cont .r {
+	width: 40px;
+	height: 378px;
+	background: url(../imsges/bg_right.png) no-repeat;
+}
+.cont_box {
+	width: 910px;
+	height: 296px;
+	border: 2px solid #dbdee1;
+}
+.cont_box_l {
+	width: 46px;
+	height: 296px;
+	border-right: 2px solid #dbdee1;
+	background: url(../imsges/star.png) no-repeat 18px 8px;
+}
+.cont_box_m {
+	padding: 34px 54px;
+	box-sizing: border-box;
+	width: 814px;
+	height: 296px;
+	color: #4f4f4f;
+}
+.cont_box_r {
+	width: 46px;
+	height: 296px;
+	border-left: 2px solid #dbdee1;
+	background: url(../imsges/star.png) no-repeat 18px 8px;
+}
+.time {
+	padding-top: 33px;
+	width: 350px;
+	height: 192px;
+	border-right: 1px solid #dbdee1;
+}
+.time h4,.floor h4 {
+	height: 60px;
+}
+.time p,.floor p {
+	height: 30px;
+}
+.floor {
+	padding-top: 30px;
+	width: 350px;
+	height: 225px;
+	border-left: 1px solid #dbdee1;
+	padding-left: 50px;
+	box-sizing: border-box;
+}
+.floor .last {
+	line-height: 70px;
+	border-top: 1px solid #dbdee1;
+}
+.floor span {
+	color: #fe505a;
+}
+.download {
+	font-size: 12px;
+	width: 187px;
+	height: 31px;
+	background: url(../imsges/download.png) no-repeat;
+	margin: 50px auto;
+}
+.download .load {
+	display: block;
+	width: 103px;
+	line-height: 31px;
+	text-indent: 35px;
+}
+.download .print {
+	display: block;
+	width: 80px;
+	line-height: 31px;
+	text-indent: 35px;
+}
+.download a { 
+	color: #4c4145;
+	text-decoration: none;
+}
+.download a:hover { 
+	color: red;
+}

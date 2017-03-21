@@ -1,0 +1,34 @@
+*{margin: 0;padding: 0;border: 0;}
+.box{width:100%;height: auto;position: relative;}
+#SIGNED{width: 100%;height: 230px;background: #ffd564;/*position: absolute;left: 0;top: 235px; z-index: 555;*/padding-top: 43px;box-sizing: border-box;display: none;}
+.con{font-size: 18px; font-weight: bold; color: #4c4145;height: 34px;width: 229px;margin: 0 auto;text-align: center;line-height: 21px;font-family: "microsoft yahei";}
+.signin-bg{width: 100%;height: 129px;background: #fff;}
+.signin-bg .title-bg{width: 320px;height: 129px;margin: 0 auto;clear: both;padding-top: 60px;box-sizing: border-box;}
+.title-bg .title{font-size: 20px;color: #4c4145;width: 170px;height: 36px;text-align: center;line-height: 20px;font-family: "microsoft yahei";margin: 0px auto;}
+.title-bg .title span{font-size: 16px;}
+.Icon-bg{width: 100%;height: 106px;background: #f5f5f5;}
+.Icon-bg .Icon{width: 320px;height: 106px;margin: 0 auto;clear: both;position: relative;}
+/*图标*/
+.f, .f-bg{position: absolute;left: 76px;top: 26px;}
+.f-bg{opacity: 0;filter: alpha(opacity:0);}
+.n,.n-bg{position: absolute;left: 137px;top:26px;}
+.n-bg{opacity: 0;filter: alpha(opacity:0);}
+.t,.t-bg{position: absolute;left: 197px;top: 26px;}
+.t-bg{opacity: 0;filter: alpha(opacity:0);}
+
+.register-bg{width: 100%;height: auto;float: left;margin-bottom: 90px;}
+.register-bg .register{width: 320px;height:auto;padding-top: 39px;box-sizing: border-box;margin: 0 auto;}
+.register h3{font-size: 16px;margin: 0 auto;font-family: "microsoft yahei";height: 8px;width: 20px;text-align: center;line-height: 8px;margin-bottom: 44px;box-sizing: border-box;}
+.EM-tag{width: 320px;height: auto;box-sizing: border-box;float: left;}
+.email{width: 320px;height: 37px;border: 1px solid #e7e9eb;box-sizing: border-box;outline-style: none;margin-bottom: 10px;border-radius: 2px;padding: 6px;float: left;}
+.E-hint{width: 320px;height: 0px;float: left;margin-bottom: 10px;overflow: hidden;}
+.pass-tag{width: 320px;height: auto;box-sizing: border-box;float: left;}
+.password{width: 320px;height: 37px;border: 1px solid #e7e9eb;box-sizing: border-box;outline-style: none;border-radius: 2px;padding: 6px;margin-bottom: 10px;float: left;}
+.P-hint{height: 0px;width: 320px;float: left;margin-bottom: 10px;overflow: hidden;}
+.checkbox,.ME{float: left;}
+.ME{font-size: 10px;color: #b4b1b2;height: 10px;line-height: 10px;margin-bottom: 16px;}
+.btn{clear: both;float: left;width: 111px;height: 37px;border: 1px solid #ffc936;box-sizing: border-box;border-radius: 2px;background: #ffd564;color: #4c4145;font-size:12px;font-family: "microsoft yahei";outline-style: none;box-shadow: 0px 0px 10px #ececec;margin-left: 104px;margin-bottom: 41px;cursor: pointer;}
+.btn:hover{color: white;}
+.btn:active{padding:0 6px 2px 8px; border:2px gray; cursor:pointer;  text-align:center; text-decoration: none;color: white; display:inline-block; clear:both;}
+.forget a{clear: both;float: left;margin-left: 135px;font-size: 12px;color: #4c4145;text-decoration: none;}
+.forget a:hover{color: #fe505a;}

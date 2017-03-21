@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>电影列表</title>
+		<link rel="stylesheet" type="text/css" href="css/movie1.css"/>
+		<!--<script src="js/diamying1.js" type="text/javascript" charset="utf-8"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<style type="text/css">
+			@font-face {
+				font-family: 'iconfont';
+				src: url('font/iconfont.eot');
+				src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+			}
+			
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 16px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+				font-size: 35px;
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<!--导航栏-->
+			<div class="header">
+				<div class="header-con">
+					<a class="logo" href="index.html"><img src="img/logo.png"/></a>				
+					<ul class="navbar">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="cinema-list.html">影院</a></li>
+						<li><a href="book1.html">购票观影</a></li>
+						<li><a href="page-list.html">新闻消息</a></li>
+						<li><a href="movie1.html">电影列表</a></li>
+						<li><a id="show-search" href="">搜索</a></li>
+					</ul>										
+					<div class="panel">
+						<div class="me">
+							<span><img src="img/index/head.jpg"/></span>
+							<a class="signin" href="two.html">登录</a>
+							<a href="one.html" class="btn-book">联系我们</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部搜索-->
+			<div id="search" class="search">
+				<div class="search-inner">
+					<form class="search-form" method="post">
+						<input class="search-field" type="text" id="" placeholder="search" />
+						<span tabindex="0" hidefocus="true" id="search-by">电影名</span>
+						<ul id="search-select">
+							<li class="first">电影名</li>
+							<li>演员</li>
+							<li>导演</li>
+							<li>年份</li>
+							<li>类型</li>
+						</ul>
+						<input id="search-submit" type="submit" value="搜索"/>
+					</form>
+				</div>
+			</div>
+			
+			<div class="mo">
+				<div class="mo1">
+					<h3><img src="img1/jiao.png"> 电影</h3>
+				</div>
+			</div>
+			
+			<!--内容-->
+			<div class="con">
+				<div class="con_left">
+					<div class="con_left1">
+						<img src="img1/p1.jpg" alt="" />
+						<img src="img1/p2.jpg" alt="" />
+						<img src="img1/p3.jpg" alt="" />
+					</div>
+					<div class="con_left2">
+						<h3>A.电影APP</h3>
+						<p>所有智能手机
+						<br />和电影
+						</p>
+						<ul class="img1">
+							<a href="#"><li><img src="img1/bg2.png"></li></a>
+							<a href="#"><li><img src="img1/bg3.png"></li></a>
+							<a href="#"><li><img src="img1/bg4.png"></li></a>
+						</ul>
+					</div>
+					<div class="con_left3">
+						<div class="zuo">
+							<h3>THE MOST 
+							<br /><span>讨论帖</span></h3>
+							<ul>
+								<li>1.<a href="#">重力</a></li>
+								<li>2.<a href="#">黑金杀机</a></li>
+								<li>3.<a href="#">坏爷爷</a></li>
+								<li>4.<a href="#">蓝色是最温暖的颜色</a></li>
+								<li>5.<a href="#">高峰</a></li>
+								<li>6.<a href="#">菲利普船长</a></li>
+								<li>7.<a href="#">逃跑计划</a></li>
+								<li>8.<a href="#">多云有机会</a></li>
+								<li>9.<a href="#">囚犯</a></li>
+								<li>10.<a href="#">第五地产</a></li>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="con_left3" id="con_left3">
+						<div class="zuo">
+							<h3><a href="gallery-four.html">即将上映</a>
+							<br /><span>电影</span></h3>
+							<ul>
+								<li>1.<a href="#">安德的游戏</a></li>
+								<li>2.<a href="#">关于时间</a></li>
+								<li>3.<a href="#">去年Vegas</a></li>
+								<li>4.<a href="#">自由的鸟儿</a></li>
+								<li>5.<a href="#">华尔街的狼</a></li>
+								<li>6.<a href="#">最好的男人假期</a></li>
+								<li>7.<a href="#">偷书贼</a></li>
+								<li>8.<a href="#">着火</a></li>
+								<li>9.<a href="#">送货的人</a></li>
+								<li>10.<a href="#">内布拉斯加州</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				<div class="con_right">
+					<div class="th" id="th">
+						<div class="tha">
+							<p class="th1">地区<a id="lon" class="lon" >中国</a></p>
+							<ul class="th11" id="th11" style="height: 0;">
+								<li class="th111">中国</li>
+								<li>纽约</li>
+								<li>巴黎</li>
+								<li>柏林</li>
+								<li>莫斯科</a></li>
+								<li>明斯克</li>
+								<li>华沙</li>
+								<li>基辅</li>
+							</ul>
+						</div>
+						
+						<p class="th2">日期<a href="#">27/09/2016</a></p>
+						<div class="tha">
+							<p class="th3">电影院<a  class="lon" id="lon3">喜洋四季荟</a></p>
+							<ul class="th11" id="th31" >
+								<li  class="th111">还不忘</li>
+								<li>帝国</li>
+								<li>普通人</li>
+								<li>剧场</li>
+								<li>影屋</li>
+							</ul>
+						</div>
+						<div class="tha">
+							<p class="th4">类别<a  class="lon" id="lon4">Childrn's</a></p>
+							<ul class="th11" id="th41">
+								<li  class="th111">Children's</li>
+								<li>喜剧片</li>
+								<li>戏剧</li>
+								<li>幻想</li>
+								<li>恐怖</li>
+								<li>惊悚片</li>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="thc">
+						<p>分类:</p>
+						<ul>
+							<li><a href="#" style="color: #4c4145;">全部</a></li>
+							<li><a href="#">发布日期</a></li>
+							<li><a href="#">普及</a></li>
+							<li><a href="#">评价</a></li>
+							<li><a href="#">马上结束</a></li>
+						</ul>
+					</div>
+					<div class="com">
+						<div class="com1">
+							<a href="movie2.html"><img src="img1/m1.jpg"></a>
+							<div class="com11">
+								<ul class="com111">
+									<li class="com1111"><a href="#">123</a></li>
+									<li class="com1112"><a href="#">7</a></li>
+									<li class="com1112"><a href="#">325</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="com2">
+							<h3>湄公河行动</h3>
+							<p>105 分钟</p>
+							<ul>
+								<li>地区: <a href="#">中国大陆</a></li>
+								<li>类型: <a href="#">动作</a> <a href="#">犯罪 </a></li>
+								<li>上映: <a href="#">2016年09月30日</a></li>
+								<li>导演: <a href="#">林超贤</a></li>
+								<li>主演: <a href="#">张涵予</a>，<a href="#"> 彭于晏</a>，<a href="#">孙淳</a>，
+									<a href="#"> 陈宝国</a>，<a href="#"> 冯文娟</a>，<a href="#"> 刘显达子</a>，<a href="#"> 赵健</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<div class="com21">
+								<a href="book1.html" class="com211">为这部电影预订一张票</a>
+								<a href="#" class="com212">添加到观看列表</a>
+							</div>	 
+							<div class="com3">
+								<div class="com31">
+									<div class="xing">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+									</div>
+									<span class="vo">7,479 人评分</span>
+									<span class="vo1">7.7</span>
+								</div>
+								<a class="com32" id="com32">选择时间</a>
+							</div>
+						</div>
+						
+						
+					</div>
+					<!--影评-->
+						<div id="yp" class="yp">
+							<div class="yp1">
+								<p>Cineworld</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>Empire</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>Curzon</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>Odeon</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>Picturehouse</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>
+					<div class="com">
+						<div class="com1">
+							<a href="#"><img src="img1/m2.jpg"></a>
+							<div class="com11">
+								<ul class="com111">
+									<li class="com1111"><a href="#">123</a></li>
+									<li class="com1112"><a href="#">7</a></li>
+									<li class="com1112"><a href="#">325</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="com2">
+							<h3>惊天破</h3>
+							<p>108 分钟</p>
+							<ul>
+								<li>地区: <a href="#">中国大陆</a><a href="#">中国香港</a></li>
+								<li>类型: <a href="#">动作</a> <a href="#">剧情 </a></li>
+								<li>上映: <a href="#">2016年10月20日</a></li>
+								<li>导演: <a href="#">吴品儒</a></li>
+								<li>主演: <a href="#">谢霆锋</a>，<a href="#"> 刘青云</a>，<a href="#">佟丽娅</a>，
+									<a href="#"> 范晓萱</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<div class="com21">
+								<a href="coming-soon.html" class="com211">为这部电影预订一张票</a>
+								<a href="#" class="com212">添加到观看列表</a>
+							</div>	 
+							<div class="com3">
+								<div class="com31">
+									<div class="xing">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+									</div>
+									<span class="vo">711人评分</span>
+									<span class="vo1">6.0</span>
+								</div>
+								<a class="com32" id="com32">选择时间</a>
+							</div>
+						</div>
+					</div>
+					<!--影评-->
+						<div id="yp" class="yp">
+							<div class="yp1">
+								<p>Cineworld</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>Empire</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>Curzon</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>Odeon</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>Picturehouse</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>
+					<div class="com">
+						<div class="com1">
+							<a href="#"><img src="img1/m3.jpg"></a>
+							<div class="com11">
+								<ul class="com111">
+									<li class="com1111"><a href="#">123</a></li>
+									<li class="com1112"><a href="#">7</a></li>
+									<li class="com1112"><a href="#">325</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="com2">
+							<h3>侠探杰克：永不回头 </h3>
+							<p>118 分钟</p>
+							<ul>
+								<li>地区: <a href="#">美国</a></li>
+								<li>类型: <a href="#">动作</a> <a href="#">犯罪 </a></li>
+								<li>上映: <a href="#"> 2016年10月21日</a></li>
+								<li>导演: <a href="#">爱德华·兹威克</a></li>
+								<li>主演: <a href="#">汤姆·克鲁斯</a>，<a href="#"> 寇碧·史莫德斯</a>，<a href="#">达妮卡·亚罗什</a>，
+									<a href="#"> 帕特里克·赫辛格</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<div class="com21">
+								<a href="#" class="com211">为这部电影预订一张票</a>
+								<a href="#" class="com212">添加到观看列表</a>
+							</div>	 
+							<div class="com3">
+								<div class="com31">
+									<div class="xing">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+									</div>
+									<span class="vo">844人评分</span>
+									<span class="vo1">7.0</span>
+								</div>
+								<a class="com32" id="com32">选择时间</a>
+							</div>
+						</div>
+					</div>
+					
+					<!--影评-->
+						<div id="yp" class="yp">
+							<div class="yp1">
+								<p>Cineworld</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>Empire</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>Curzon</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>Odeon</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>Picturehouse</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>
+					<div class="com">
+						<div class="com1">
+							<a href="#"><img src="img1/m4.jpg"></a>
+							<div class="com11">
+								<ul class="com111">
+									<li class="com1111"><a href="#">123</a></li>
+									<li class="com1112"><a href="#">7</a></li>
+									<li class="com1112"><a href="#">325</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="com2">
+							<h3>机械师2：复活</h3>
+							<p>97 分钟</p>
+							<ul>
+								<li>地区: <a href="#">法国</a> <a href="#">美国</a></li>
+								<li>类型: <a href="#">动作</a> <a href="#">犯罪 </a></li>
+								<li>上映: <a href="#"> 2016年10月21日</a></li>
+								<li>导演: <a href="#">丹尼斯·甘塞尔</a></li>
+								<li>主演: <a href="#">杰森·斯坦森</a>，<a href="#"> 杰西卡·阿尔芭</a>，<a href="#">汤米·李·琼斯</a>，
+									<a href="#"> 杨紫琼</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<div class="com21">
+								<a href="#" class="com211">为这部电影预订一张票</a>
+								<a href="#" class="com212">添加到观看列表</a>
+							</div>	 
+							<div class="com3">
+								<div class="com31">
+									<div class="xing">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+									</div>
+									<span class="vo">1,984人评分</span>
+									<span class="vo1">6.9</span>
+								</div>
+								<a class="com32" id="com32">选择时间</a>
+							</div>
+						</div>
+					</div>
+					<!--影评-->
+						<div id="yp" class="yp">
+							<div class="yp1">
+								<p>Cineworld</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>Empire</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>Curzon</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>Odeon</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>Picturehouse</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>
+						
+					<div class="com">
+						<div class="com1">
+							<a href="#"><img src="img1/m5.jpg"></a>
+							<div class="com11">
+								<ul class="com111">
+									<li class="com1111"><a href="#">123</a></li>
+									<li class="com1112"><a href="#">7</a></li>
+									<li class="com1112"><a href="#">325</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="com2">
+							<h3>圆梦巨人</h3>
+							<p>117 分钟</p>
+							<ul>
+								<li>地区: <a href="#">英国</a> <a href="#">加拿大</a> <a href="#">美国</a></li>
+								<li>类型: <a href="#">冒险</a> <a href="#">奇幻 </a></li>
+								<li>上映: <a href="#"> 2016年10月14日</a></li>
+								<li>导演: <a href="#">史蒂文·斯皮尔伯格</a></li>
+								<li>主演: <a href="#">鲁比·巴恩希尔</a>，<a href="#"> 马克·里朗斯</a>，<a href="#">杰梅·克莱门特</a>，
+									<a href="#"> 佩内洛普·威尔顿</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<div class="com21">
+								<a href="#" class="com211">为这部电影预订一张票</a>
+								<a href="#" class="com212">添加到观看列表</a>
+							</div>	 
+							<div class="com3">
+								<div class="com31">
+									<div class="xing">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+									</div>
+									<span class="vo">1,263人评分 </span>
+									<span class="vo1">7.2</span>
+								</div>
+								<a class="com32" id="com32">选择时间</a>
+							</div>
+						</div>
+					</div>
+					
+					<!--影评-->
+						<div id="yp" class="yp">
+							<div class="yp1">
+								<p>Cineworld</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>Empire</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>Curzon</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>Odeon</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>Picturehouse</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>
+						
+					<div class="com">
+						<div class="com1">
+							<a href="#"><img src="img1/m6.jpg"></a>
+							<div class="com11">
+								<ul class="com111">
+									<li class="com1111"><a href="#">123</a></li>
+									<li class="com1112"><a href="#">7</a></li>
+									<li class="com1112"><a href="#">325</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="com2">
+							<h3>暗杀游戏</h3>
+							<p>100 分钟</p>
+							<ul>
+								<li>地区: <a href="#">俄罗斯</a></li>
+								<li>类型: <a href="#">动作</a> <a href="#">惊悚 </a></li>
+								<li>上映: <a href="#">2016年10月14日</a></li>
+								<li>导演: <a href="#">萨里·奥德赛耶</a></li>
+								<li>主演: <a href="#">瓦蒂姆·提萨拉提</a>，<a href="#"> 维奥莱塔·吉特孟斯塔亚</a>，<a href="#">文尼亚民·斯梅霍夫</a>，
+									<a href="#"> 维克多·维尔比斯基</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<div class="com21">
+								<a href="#" class="com211">为这部电影预订一张票</a>
+								<a href="#" class="com212">添加到观看列表</a>
+							</div>	 
+							<div class="com3">
+								<div class="com31">
+									<div class="xing">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+									</div>
+									<span class="vo">195人评分</span>
+									<span class="vo1">5.2</span>
+								</div>
+								<a class="com32" id="com32">选择时间</a>
+							</div>
+						</div>
+					</div>
+					
+					<!--影评-->
+						<div id="yp" class="yp">
+							<div class="yp1">
+								<p>Cineworld</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>Empire</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>Curzon</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>Odeon</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>Picturehouse</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>
+						
+					<div class="com">
+						<div class="com1">
+							<a href="#"><img src="img1/m7.jpg"></a>
+							<div class="com11">
+								<ul class="com111">
+									<li class="com1111"><a href="#">123</a></li>
+									<li class="com1112"><a href="#">7</a></li>
+									<li class="com1112"><a href="#">325</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="com2">
+							<h3>宾虚 </h3>
+							<p>124 分钟</p>
+							<ul>
+								<li>地区: <a href="#">美国</a></li>
+								<li>类型: <a href="#">冒险</a> <a href="#">剧情 </a></li>
+								<li>上映: <a href="#">2016年10月10日</a></li>
+								<li>导演: <a href="#">提莫·贝克曼贝托夫</a></li>
+								<li>主演: <a href="#">杰克·休斯顿</a>，<a href="#"> 托比·凯贝尔</a>，<a href="#">纳赞宁·波妮阿蒂</a>，
+									<a href="#"> 摩根·弗里曼</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<div class="com21">
+								<a href="#" class="com211">为这部电影预订一张票</a>
+								<a href="#" class="com212">添加到观看列表</a>
+							</div>	 
+							<div class="com3">
+								<div class="com31">
+									<div class="xing">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+									</div>
+									<span class="vo">898人评分 </span>
+									<span class="vo1">6.9</span>
+								</div>
+								<a class="com32" id="com32">选择时间</a>
+							</div>
+						</div>
+					</div>
+					
+					<!--影评-->
+						<div id="yp" class="yp">
+							<div class="yp1">
+								<p>Cineworld</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>Empire</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>Curzon</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>Odeon</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>Picturehouse</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>
+						
+					<div class="com">
+						<div class="com1">
+							<a href="#"><img src="img1/m8.jpg"></a>
+							<div class="com11">
+								<ul class="com111">
+									<li class="com1111"><a href="#">123</a></li>
+									<li class="com1112"><a href="#">7</a></li>
+									<li class="com1112"><a href="#">325</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="com2">
+							<h3>凶手还未睡</h3>
+							<p>94 分钟</p>
+							<ul>
+								<li>地区: <a href="#">中国香港</a></li>
+								<li>类型: <a href="#">惊悚</a> <a href="#">悬疑 </a></li>
+								<li>上映: <a href="#"> 2016年10月21日</a></li>
+								<li>导演: <a href="#">邱礼涛</a></li>
+								<li>主演: <a href="#">文咏珊</a>，<a href="#"> 许志安</a>，<a href="#">林家栋</a>，
+									<a href="#"> 刘浩龙</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<div class="com21">
+								<a href="#" class="com211">为这部电影预订一张票</a>
+								<a href="#" class="com212">添加到观看列表</a>
+							</div>	 
+							<div class="com3">
+								<div class="com31">
+									<div class="xing">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+									</div>
+									<span class="vo">276人评分</span>
+									<span class="vo1">6.6</span>
+								</div>
+								<a class="com32" id="com32">选择时间</a>
+							</div>
+						</div>
+					</div>
+					
+					<!--影评-->
+						<div class="yp">
+							<div class="yp1">
+								<p>Cineworld</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>Empire</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>Curzon</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>Odeon</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>Picturehouse</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>
+						
+					<div class="com">
+						<div class="com1">
+							<a href="#"><img src="img1/m9.jpg"></a>
+							<div class="com11">
+								<ul class="com111">
+									<li class="com1111"><a href="#">123</a></li>
+									<li class="com1112"><a href="#">7</a></li>
+									<li class="com1112"><a href="#">325</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="com2">
+							<h3>反贪风暴2 </h3>
+							<p>95 分钟</p>
+							<ul>
+								<li>地区: <a href="#">中国香港</a></li>
+								<li>类型: <a href="#">动作</a> <a href="#">悬疑 </a></li>
+								<li>上映: <a href="#"> 2016年9月14日</a></li>
+								<li>导演: <a href="#">林德禄</a></li>
+								<li>主演: <a href="#">古天乐</a>，<a href="#"> 张智霖</a>，<a href="#">周渝民</a>，
+									<a href="#"> 蔡少芬</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<div class="com21">
+								<a href="#" class="com211">为这部电影预订一张票</a>
+								<a href="#" class="com212">添加到观看列表</a>
+							</div>	 
+							<div class="com3">
+								<div class="com31">
+									<div class="xing">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+									</div>
+									<span class="vo">758人评分</span>
+									<span class="vo1">6.0</span>
+								</div>
+								<a class="com32" id="com32">选择时间</a>
+							</div>
+						</div>
+					</div>
+					
+					<!--影评-->
+						<div id="yp" class="yp">
+							<div class="yp1">
+								<p>Cineworld</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>Empire</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>Curzon</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>Odeon</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>Picturehouse</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>
+						
+					<div class="com">
+						<div class="com1">
+							<a href="#"><img src="img1/m10.jpg"></a>
+							<div class="com11">
+								<ul class="com111">
+									<li class="com1111"><a href="#">123</a></li>
+									<li class="com1112"><a href="#">7</a></li>
+									<li class="com1112"><a href="#">325</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="com2">
+							<h3>奇异博士</h3>
+							<p>115 分钟</p>
+							<ul>
+								<li>地区: <a href="#">美国</a></li>
+								<li>类型: <a href="#">动作</a> <a href="#">冒险 </a></li>
+								<li>上映: <a href="#"> 2016年11月4日</a></li>
+								<li>导演: <a href="#">斯科特·德瑞克森</a></li>
+								<li>主演: <a href="#">本尼迪克特·康伯巴奇</a>，<a href="#"> 蒂尔达·斯文顿</a>，<a href="#">切瓦特·埃加福特</a>，
+									<a href="#"> 瑞秋·麦克亚当斯</a>，<a href="#">...</a></li>
+								<li>适合人群: <a href="#">全部</a></li>
+							</ul>
+							<div class="com21">
+								<a href="#" class="com211">为这部电影预订一张票</a>
+								<a href="#" class="com212">添加到观看列表</a>
+							</div>	 
+							<div class="com3">
+								<div class="com31">
+									<div class="xing">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+										<img src="img1/xing.png">
+									</div>
+									<span class="vo">225人评分</span>
+									<span class="vo1">7.0</span>
+								</div>
+								<a class="com32" id="com32">选择时间</a>
+							</div>
+						</div>
+					</div>
+					
+					<!--影评-->
+						<div id="yp" class="yp">
+							<div class="yp1">
+								<p>Cineworld</p>
+								<ul class="yp11">
+									<li>09:40</li>
+									<li>13:45</li>
+									<li class="dq">15:45</li>
+									<li>19:50</li>
+									<li>21:50</li>
+								</ul>
+							</div>
+							<div class="yp2">
+								<p>Empire</p>
+								<ul class="yp21">
+									<li>09:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp3">
+								<p>Curzon</p>
+								<ul class="yp31">
+									<li>09:00</li>
+									<li>11:00</li>
+									<li>13:00</li>
+									<li>15:00</li>
+									<li>17:00</li>
+									<li>19:00</li>
+									<li>21:00</li>
+									<li>23:00</li>
+									<li>01:00</li>
+								</ul>
+							</div>
+							<div class="yp4">
+								<p>Odeon</p>
+								<ul class="yp41">
+									<li>10:45</li>
+									<li>16:00</li>
+									<li>19:00</li>
+									<li>21:15</li>
+									<li>23:00</li>
+								</ul>
+							</div>
+							<div class="yp5">
+								<p>Picturehouse</p>
+								<ul class="yp51">
+									<li>17:45</li>
+									<li>21:30</li>
+									<li>02:20</li>
+								</ul>
+							</div>
+						</div>
+					<div class="an">
+						<a href="#" class="anan">PREV<span></span></a>
+						<a href="#" class="anam">NEXT<span></span></a>
+					</div>
+					
+					
+					
+					
+				</div>
+			</div>
+			
+			<!--尾部开始-->
+			<div class="footer">
+				<div class="footer-con">
+					<ul>
+						<li><a href="">新闻</a></li>
+						<li><a href="">影院</a></li>
+						<li><a href="">购票</a></li>
+						<li><a href="">评分</a></li>
+					</ul>
+					<ul>
+						<li><a href="">即将上映</a></li>
+						<li><a href="">正在热映</a></li>
+						<li><a href="">观影指南</a></li>
+						<li><a href="">电影票房</a></li>
+					</ul>
+					<ul>
+						<li><a href="">服务条款</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">关于我们</a></li>
+					</ul>
+					<div class="footer-info">
+						<p>
+							<img class="logo-bot" src="img/index/logo-dark.png"/><br />
+							<span>关注我们</span>
+						</p>
+						<div id="social" class="social">
+							<a href=""><i class="iconfont">&#xe606;</i></a>
+							<a href=""><i class="iconfont">&#xe675;</i></a>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<script src="js/global.js" type="text/javascript" charset="utf-8"></script>
+		<div id="go-to-top"></div>
+	</body>
+</html>

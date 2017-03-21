@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.inner { 
+	width:1140px;
+	margin: 0 auto;
+}
+body {
+	font-family: "微软雅黑";
+	color:#4c4145;
+	font-size: 14px;
+}
+a:focus {outline-style: none;}
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+.book {
+	padding-top: 100px;
+	width: 232px;
+	height: 260px;
+	text-align: center;
+	margin: 0 auto;
+}
+.book img {
+	width: 77;
+	height: 70px;
+}
+.book h3 {
+	color: #4c4145;
+	font-size: 30px;
+	font-weight: 900;
+}
+.book p {
+	font-size: 16px;
+	line-height: 36px;
+	margin-bottom: 15px;
+}
+.butt { padding-left: 20px; }
+.btn1 {
+	display: block;
+	width: 101px;
+	height: 25px;
+	/*background: url(../imsges/icon.png) no-repeat 0px 0px;*/
+	margin-right: 5px;
+}
+.btn2 {
+	display: block;
+	width: 91px;
+	height: 25px;
+	/*background: url(../imsges/icon.png) no-repeat -1px -32px;*/
+}
+
+.left {
+	width: 379px;
+	height: 24px;
+	background: url(../imsges/what_bg1.png) no-repeat 0px bottom;
+	text-indent: 58px;
+	color: #dbdee1;
+}
+.right {
+	width: 761px;
+	height: 23px;
+	
+}
+.right .a_sit {
+	width: 378px;
+	height: 24px;
+	background: url(../imsges/what_bg1.png) no-repeat 0px bottom;
+	text-indent: 65px;
+	color: #dbdee1;
+}
+.right .bor_1 {
+	width: 378px;
+	height: 24px;
+	background: url(../imsges/what_bg2.png) no-repeat 0px bottom;
+	text-indent: 65px;
+}
+.choose {
+	position: relative;
+	padding-left: 50px;
+	padding-top: 60px; 
+	height: 56px;
+	width: 1140px;
+	font-size: 14px;
+	font-weight: 900;
+	color: #4c4145;
+}
+.price {
+	height: 70px;
+}
+.contact {
+	height: 220px;
+}
+.small_pic {
+	position: absolute;
+	left: 18px;
+	top: 65px;
+	display: block;
+	width: 21px;
+	height: 7px;
+	background: url(../imsges/icon.png) no-repeat 0px -63px;
+}
+.back_relust {
+	padding-top: 20px;
+}
+.back_relust span {
+	padding: 30px;
+	font-weight: 900;
+	font-size: 15px;
+}
+.back_relust .total {
+	color: #fe505a;
+}
+.forms {
+	padding:35px 0 35px 0;
+}
+.email {
+	position: relative;
+	float: left;
+	width: 362px;
+	height: 41px;
+	margin-right: 15px;
+}
+.email p{ float: left; }
+.bg {
+	width: 40px;
+	height: 40px;
+	background: url(../imsges/tel.png) no-repeat 12px 14px #4c4145;
+	border-radius: 4px 0 0 4px;
+}
+.bg2 {
+	width: 40px;
+	height: 40px;
+	background: url(../imsges/tel.png) no-repeat 12px -62px #4c4145;
+	border-radius: 4px 0 0 4px;
+}
+.inpu {
+	width: 320px;
+	height: 28px;
+	border: 1px solid #dbdee1;
+	border-radius: 0 4px 4px 0;
+	padding-top: 10px;
+}
+.email_txt {
+	width: 320px;
+	height: 20px;
+	border: 0;
+	outline-style: none;
+	line-height: 20px;
+	text-indent: 20px;
+	font-size: 12px;
+	color: #a9a9a9;
+}
+.email span {
+	position: absolute;
+	right: 11px;
+	top: 11px;
+	display: block;
+	width: 24px;
+	height: 21px;
+}
+.email span.t {
+	background: url(../imsges/boolean.png) no-repeat 0px 0px;
+}
+.email span.f{
+	background: url(../imsges/boolean.png) no-repeat -24px 0px;
+}
+.mes {
+	padding-top: 10px;
+	height: 78px;
+	border-bottom: 1px solid #dbdee1;
+	font-size: 13px;
+	background: url(../imsges/tel.png) no-repeat 0px -150px;
+	text-indent: 50px;
+}
+.next {
+	padding-top: 50px;
+	width: 180px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+.next .cont {
+	border-radius: 5px;
+	position: relative;
+	padding: 5px;
+	display: block;
+	text-align: center;
+	width: 170;
+	height: 50px;
+	color: #f34852;
+	text-decoration: none;	
+
+}
+.next_step,.choose_a_sit  {
+	display: block;
+	height: 25px;
+}
+.choose_a_sit { color: #666;}
+.next_step { border-bottom: 1px solid #dbdee1; }
+.next .cont:hover {
+	background: #f34852;
+	color: #fff;
+}
+.next .cont:hover .choose_a_sit{
+	color: #fff;
+}
+.next .cont p {
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 900px;
+}
+
+.book-confirm{
+	width: 80px;
+	margin: 40px auto 0;
+	text-align: center;
+	font-size: 16px;
+	background: #ffe08d;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+.book-confirm a{
+	color: #4c4145;
+}

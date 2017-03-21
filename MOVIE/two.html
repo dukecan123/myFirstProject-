@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆</title>
+		<link rel="stylesheet" type="text/css" href="css/two.css"/>
+		<script src="js/move2.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<style type="text/css">
+			@font-face {
+				font-family: 'iconfont';
+				src: url('font/iconfont.eot');
+				src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+			}
+			
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 16px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+				font-size: 35px;
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部导航-->
+			<div class="header">
+				<div class="header-con">
+					<a class="logo" href="index.html"><img src="img/logo.png"/></a>				
+					<ul class="navbar">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="cinema-list.html">影院</a></li>
+						<li><a href="book1.html">购票观影</a></li>
+						<li><a href="page-list.html">新闻消息</a></li>
+						<li><a href="movie1.html">电影列表</a></li>
+						<li><a id="show-search" href="">搜索</a></li>
+					</ul>										
+					<div class="panel">
+						<div class="me">
+							<span><img src="img/index/head.jpg"/></span>
+							<a class="signin" href="two.html">登录</a>
+							<a href="one.html" class="btn-book">联系我们</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部搜索-->
+			<div id="search" class="search">
+				<div class="search-inner">
+					<form class="search-form" method="post">
+						<input class="search-field" type="text" id="" placeholder="search" />
+						<span tabindex="0" hidefocus="true" id="search-by">电影名</span>
+						<ul id="search-select">
+							<li class="first">电影名</li>
+							<li>演员</li>
+							<li>导演</li>
+							<li>年份</li>
+							<li>类型</li>
+						</ul>
+						<input id="search-submit" type="submit" value="搜索"/>
+					</form>
+				</div>
+			</div>
+		
+		<div class="box">			
+			<div class="signin-bg">
+				<div class="title-bg">
+					<h2 class="title"><b>登录</b><br /><span>welcome to A.Movie</span></h2>
+				</div>
+			</div>
+			<div class="Icon-bg">
+				<div class="Icon">
+					<ul class="ico">
+						
+						<a style="font-size: 60px;" href=""><i style="margin-left: 125px;" class="iconfont">&#xe606;</i></a>
+						<a href=""><i class="iconfont">&#xe675;</i></a>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="register-bg">
+				<div class="register" id="register">
+					<h3>or</h3>
+					<div class="EM-tag">
+						<input type="email" id="email" class="email" value="" placeholder="邮箱"/>
+						<p id="E-hint" class="E-hint"><img src="img/two-tishi.png"/></p>
+					</div>
+					<div class="pass-tag">
+						<input type="password"class="password" id="password" placeholder="密码"/>
+						<p id="P-hint" class="P-hint"><img src="img/p-TS.png"/></p>
+					</div>
+					<input type="checkbox" name="" id="" class="checkbox" value="" /><p class="ME">记住我</p>
+					<input type="button" class="btn" name="btn" id="btn" value="登录" />
+					<p class="forget"><a href="#">忘记密码?</a></p>
+				</div>
+			</div>
+			<div id="SIGNED">
+				<p class="con">登录成功,欢迎您!</p>
+			</div>
+		</div>
+		<!--页面尾部-->
+			<div class="footer">
+				<div class="footer-con">
+					<ul>
+						<li><a href="">新闻</a></li>
+						<li><a href="">影院</a></li>
+						<li><a href="">购票</a></li>
+						<li><a href="">评分</a></li>
+					</ul>
+					<ul>
+						<li><a href="">即将上映</a></li>
+						<li><a href="">正在热映</a></li>
+						<li><a href="">观影指南</a></li>
+						<li><a href="">电影票房</a></li>
+					</ul>
+					<ul>
+						<li><a href="">服务条款</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">关于我们</a></li>
+					</ul>
+					<div class="footer-info">
+						<p>
+							<img class="logo-bot" src="img/index/logo-dark.png"/><br />
+							<span>关注我们</span>
+						</p>
+						<div id="social" class="social">
+							<a href=""><i class="iconfont">&#xe606;</i></a>
+							<a href=""><i class="iconfont">&#xe675;</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="js/global.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

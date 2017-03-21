@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购票观影</title>
+		<link rel="stylesheet" type="text/css" href="css/book2.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/book1jq.js"></script>
+		<!--<script src="js/book1.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<style type="text/css">
+			@font-face {
+				font-family: 'iconfont';
+				src: url('font/iconfont.eot');
+				src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+			}
+			
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 16px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+				font-size: 35px;
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+				<div class="header-con">
+					<a class="logo" href="index.html"><img src="img/logo.png"/></a>				
+					<ul class="navbar">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="cinema-list.html">影院</a></li>
+						<li><a href="book1.html">购票观影</a></li>
+						<li><a href="page-list.html">新闻消息</a></li>
+						<li><a href="movie1.html">电影列表</a></li>
+						<li><a id="show-search" href="">搜索</a></li>
+					</ul>										
+					<div class="panel">
+						<div class="me">
+							<span><img src="img/index/head.jpg"/></span>
+							<a class="signin" href="two.html">登录</a>
+							<a href="one.html" class="btn-book">联系我们</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="search" class="search">
+				<div class="search-inner">
+					<form class="search-form" method="post">
+						<input class="search-field" type="text" id="" placeholder="search" />
+						<span tabindex="0" hidefocus="true" id="search-by">电影名</span>
+						<ul id="search-select">
+							<li class="first">电影名</li>
+							<li>演员</li>
+							<li>导演</li>
+							<li>年份</li>
+							<li>类型</li>
+						</ul>
+						<input id="search-submit" type="submit" value="搜索"/>
+					</form>
+				</div>
+			</div>
+		
+		<div class="book">
+			<img src="imsges/tickets.png"/>
+			<h3>订票观影</h3>
+			<p>享受你的电影时光</p>
+			<div class="butt">
+		    	<a href="javascript:;" class="btn1 fl"></a>
+				<a href="javascript:;" class="btn2 fl"></a>	
+			</div>
+		</div>
+		<div class="what_box inner clearfix">
+			<div class="left fl">1.选择你的电影</div>
+			<div class="right fl clearfix">
+				<div class="a_sit fl">2.选择一个座位</div>
+				<div class="bor_1 fl"></div>
+			</div>
+		</div>
+		<div class="price">
+			<div class="price_list clearfix">
+				<div class="l fl">价格<span class="maney_10"></span>$10<span class="maney_20"></span>$20<span class="maney_30"></span> $30</div>
+				<div class="r fr"><span class="maney_not"></span>不可用<span class="maney_you"></span>您的选择</div>
+			</div>
+			<p>屏幕</p>
+		</div>
+		<div id="sit" class="zuohao clearfix">
+			<div class="abc fl">
+				<span>A</span>
+				<span>B</span>
+				<span>C</span>
+				<span>D</span>
+				<span>C</span>
+				<span>F</span>
+				<span>G</span>
+				<span>H</span>
+				<span>I</span>
+				<span>J</span>
+				<span>K</span>
+				<span>L</span>
+			</div>
+			<div class="box clearfix">
+				<div class="num_table fl" id="num_table">
+<!--	11111111-->
+					<div class="one public first">
+						<span>A1</span>
+						<span>A2</span>
+						<span>A3</span>
+						<span>A4</span>
+						<span>A5</span>
+						<span>A6</span>
+						<span>A7</span>
+						<span>A8</span>
+						<span>A9</span>
+						<span>A10</span>
+						<span>A11</span>
+						<span>A12</span>
+						<span>A13</span>
+						<span>A14</span>
+						<span>A15</span>
+						<span>A16</span>
+						<span>A17</span>
+					</div>
+					<div class="two public second">
+						<span>B1</span>
+						<span>B2</span>
+						<span>B3</span>
+						<span>B4</span>
+						<span>B5</span>
+						<span>B6</span>
+						<span>B7</span>
+						<span>B8</span>
+						<span>B9</span>
+						<span>B10</span>
+						<span>B11</span>
+						<span>B12</span>
+						<span>B13</span>
+						<span>B14</span>
+						<span>B15</span>
+						<span>B16</span>
+						<span>B17</span>
+						<span>B18</span>
+						<span>B19</span>
+					</div>
+					<div class="two public third">
+						<span>C1</span>
+						<span>C2</span>
+						<span>C3</span>
+						<span>C4</span>
+						<span>C5</span>
+						<span>C6</span>
+						<span>C7</span>
+						<span>C8</span>
+						<span>C9</span>
+						<span>C10</span>
+						<span>C11</span>
+						<span>C12</span>
+						<span>C13</span>
+						<span>C14</span>
+						<span>C15</span>
+						<span>C16</span>
+						<span>C17</span>
+						<span>C18</span>
+						<span>C19</span>
+					</div>
+					<div class="two public four fourt">
+						<span>D1</span>
+						<span>D2</span>
+						<span>D3</span>
+						<span>D4</span>
+						<span>D5</span>
+						<span class="specical">D6</span>
+						<span class="specical">D7</span>
+						<span>D8</span>
+						<span>D9</span>
+						<span>D10</span>
+						<span>D11</span>
+						<span>D12</span>
+						<span>D13</span>
+						<span>D14</span>
+						<span>D15</span>
+						<span>D16</span>
+						<span>D17</span>
+						<span>D18</span>
+						<span>D19</span>
+					</div>
+					<div class="five public fifth">
+						<span>E1</span>
+						<span>E2</span>
+						<span>E3</span>
+						<span>E4</span>
+						<span>E5</span>
+						<span>E6</span>
+						<span>E7</span>
+						<span>E8</span>
+						<span>E9</span>
+						<span>E10</span>
+						<span>E11</span>
+						<span>E12</span>
+						<span>E13</span>
+						<span>E14</span>
+						<span>E15</span>
+						<span>E16</span>
+						<span>E17</span>
+						<span>E18</span>
+						<span>E19</span>
+					</div>
+					<div class="five public sixth">
+						<span>F1</span>
+						<span>F2</span>
+						<span>F3</span>
+						<span>F4</span>
+						<span>F5</span>
+						<span>F6</span>
+						<span>F7</span>
+						<span>F8</span>
+						<span>F9</span>
+						<span>F10</span>
+						<span>F11</span>
+						<span>F12</span>
+						<span>F13</span>
+						<span>F14</span>
+						<span>F15</span>
+						<span>F16</span>
+						<span>F17</span>
+						<span>F18</span>
+						<span>F19</span>
+					</div>
+					<div class="five public seventh">
+						<span>I1</span>
+						<span>I2</span>
+						<span>I3</span>
+						<span>I4</span>
+						<span>I5</span>
+						<span>I6</span>
+						<span>I7</span>
+						<span>I8</span>
+						<span>I9</span>
+						<span>I10</span>
+						<span>I11</span>
+						<span>I12</span>
+						<span>I13</span>
+						<span>I14</span>
+						<span>I15</span>
+						<span>I16</span>
+						<span>I17</span>
+						<span>I18</span>
+						<span>I19</span>
+					</div>
+					<div class="five public eight eighth">
+						<span>J1</span>
+						<span>J2</span>
+						<span>J3</span>
+						<span>J4</span>
+						<span>J5</span>
+						<span>J6</span>
+						<span>J7</span>
+						<span>J8</span>
+						<span>J9</span>
+						<span>J10</span>
+						<span>J11</span>
+						<span>J12</span>
+						<span>J13</span>
+						<span>J14</span>
+						<span>J15</span>	
+					</div>
+					<div class="nine space public ninth">
+						<span>F1</span>
+						<span>F2</span>
+						<span>F3</span>
+						<span>F4</span>
+						<span>F5</span>
+						<span>F6</span>
+						<span>F7</span>
+						<span>F8</span>
+						<span>F9</span>
+						<span>F10</span>					
+					</div>
+					<div class="nine ten public tenth">
+						<span>B1</span>
+						<span>B2</span>
+						<span>B3</span>
+						<span>B4</span>
+						<span>B5</span>
+						<span>B6</span>
+						<span>B7</span>
+						<span>B8</span>
+						<span>B9</span>
+						<span>B10</span>					
+					</div>
+					<div class="nine eleven public eleventh">					
+						<span>J1</span>
+						<span>J2</span>
+						<span>J3</span>
+						<span>J4</span>
+						<span>J5</span>
+						<span>J6</span>
+						<span>J7</span>
+						<span>J8</span>					
+					</div>
+				</div>
+				<div class="result fr">
+					<h3>结<br />算</h3>
+					<div class="txt" id="txt"></div>
+					<div>
+						=<br />
+						<p class="finalResult">$0</p>
+					</div>
+				</div>
+			</div>
+			<div class="num123">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span>10</span>
+				<span>11</span>
+				<span>12</span>
+				<span>13</span>
+				<span>14</span>
+				<span>15</span>
+				<span>16</span>
+				<span>17</span>
+				<span>18</span>
+				<span>19</span>
+			</div>
+		</div>
+		<div class="tab">
+			<div class="next fl">
+				<a href="book1.html" class="cont">
+					<span class="next_step">上一步</span>
+					<span class="choose_a_sit">选择电影</span>
+					<p class="prev">&lt;</p>
+				</a>
+			</div>
+			<div class="next fr">
+				<a href="book3.html" class="cont">
+					<span class="next_step">下一步</span>
+					<span class="choose_a_sit">结算</span>
+					<p>&gt;</p>
+				</a>
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="footer-con">
+				<ul>
+					<li><a href="">新闻</a></li>
+					<li><a href="">影院</a></li>
+					<li><a href="">购票</a></li>
+					<li><a href="">评分</a></li>
+				</ul>
+				<ul>
+					<li><a href="">即将上映</a></li>
+					<li><a href="">正在热映</a></li>
+					<li><a href="">观影指南</a></li>
+					<li><a href="">电影票房</a></li>
+				</ul>
+				<ul>
+					<li><a href="">服务条款</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">关于我们</a></li>
+				</ul>
+				<div class="footer-info">
+					<p>
+						<img class="logo-bot" src="img/index/logo-dark.png"/><br />
+						<span>关注我们</span>
+					</p>
+					<div id="social" class="social">
+						<a href=""><i class="iconfont">&#xe606;</i></a>
+						<a href=""><i class="iconfont">&#xe675;</i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--返回顶部-->
+		<div id="go-to-top"></div>
+		<script src="js/global.js" type="text/javascript" charset="utf-8"></script>	
+	</body>
+</html>
+
